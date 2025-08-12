@@ -1,0 +1,16 @@
+2025-08-12 13:49:57.093 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-12 13:49:59.104 | INFO     | __main__:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-12 13:51:20.572 | INFO     | __main__:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-12 13:51:20.576 | INFO     | __main__:evaluate_dify_rag:250 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-12 13:51:20.876 | INFO     | __main__:evaluate_dify_rag:258 - 加载了 1 条测试数据
+2025-08-12 13:51:21.397 | INFO     | __main__:create_evaluation_dataset:187 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 13:51:21.398 | INFO     | __main__:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 13:51:21.398 | INFO     | __main__:retrieve:117 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 13:51:21.398 | INFO     | __main__:retrieve:143 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 13:51:21.398 | INFO     | __main__:retrieve:144 - 检索配置 - top_k: 3
+2025-08-12 13:51:21.398 | INFO     | __main__:retrieve:145 - 检索配置 - 分数阈值启用: True
+2025-08-12 13:51:21.398 | INFO     | __main__:retrieve:147 - 检索配置 - 分数阈值: 0.5
+2025-08-12 13:51:23.134 | INFO     | __main__:create_evaluation_dataset:191 - 检索到 3 个上下文片段
+2025-08-12 13:51:29.639 | INFO     | __main__:create_evaluation_dataset:202 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-12 13:51:29.639 | INFO     | __main__:evaluate_dify_rag:278 - 开始执行RAGAS评估,检索策略:hybrid_search2...

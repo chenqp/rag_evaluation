@@ -19,50 +19,8 @@ result_excel_file="evaluation_results1.xlsx"
 
 
 # 使用数组形式定义多组测试配置
-[[retrieve_configs]]
-name = "full_text_search1"
-search_method = "full_text_search"
-top_k = 3
-reranking_enable = false
-reranking_model_name = "bge-reranker-v2-m3"
-score_threshold_enabled = false
-score_threshold = 0.5
 
-[[retrieve_configs]]
-name = "full_text_search2"
-search_method = "full_text_search"
-top_k = 3
-reranking_enable = true
-reranking_model_name = "bge-reranker-v2-m3"
-score_threshold_enabled = true
-score_threshold = 0.5
 
-[[retrieve_configs]]
-name = "semantic_search1"
-search_method = "semantic_search"
-top_k = 3
-reranking_enable = false
-reranking_model_name = "bge-reranker-v2-m3"
-score_threshold_enabled = false
-score_threshold = 0.5
-
-[[retrieve_configs]]
-name = "semantic_search2"
-search_method = "semantic_search"
-top_k = 3
-reranking_enable = true
-reranking_model_name = "bge-reranker-v2-m3"
-score_threshold_enabled = true
-score_threshold = 0.5
-
-[[retrieve_configs]]
-name = "hybrid_search1"
-search_method = "hybrid_search"
-top_k = 3
-reranking_enable = false
-reranking_model_name = "bge-reranker-v2-m3"
-score_threshold_enabled = false
-score_threshold = 0.5
 
 [[retrieve_configs]]
 name = "hybrid_search2"
