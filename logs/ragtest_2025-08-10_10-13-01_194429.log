@@ -1,0 +1,8 @@
+2025-08-10 10:13:01.197 | INFO     | __main__:load_config:40 - 成功加载配置文件
+2025-08-10 10:13:01.197 | INFO     | __main__:evaluate_dify_rag:261 - 开始评估Dify知识库召回和RAG系统...
+2025-08-10 10:13:01.197 | INFO     | __main__:evaluate_dify_rag:270 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-10 10:13:01.197 | INFO     | __main__:evaluate_dify_rag:271 - API Base URL: https://api.deepseek.com/v1
+2025-08-10 10:13:02.479 | INFO     | __main__:evaluate_dify_rag:289 - 加载了 1 条测试数据
+2025-08-10 10:13:02.942 | INFO     | dify_retrieval:__init__:19 - DifyRetrieval初始化成功
+2025-08-10 10:13:02.942 | INFO     | __main__:create_evaluation_dataset:189 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-10 10:13:02.958 | ERROR    | __main__:main:331 - 评估过程中发生错误: At least one sheet must be visible

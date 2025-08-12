@@ -1,0 +1,4 @@
+2025-08-09 20:46:20.762 | ERROR    | __main__:<module>:282 - 加载配置文件时发生错误: 'gbk' codec can't decode byte 0xae in position 19: illegal multibyte sequence
+2025-08-09 20:46:20.762 | INFO     | __main__:evaluate_dify_rag:195 - 开始评估Dify知识库召回和RAG系统的答案...
+2025-08-09 20:46:20.935 | INFO     | __main__:evaluate_dify_rag:199 - 加载了 1 条测试数据
+2025-08-09 20:46:20.935 | ERROR    | __main__:<module>:290 - 评估过程中发生错误: 'NoneType' object has no attribute 'get'

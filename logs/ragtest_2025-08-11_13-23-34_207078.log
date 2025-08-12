@@ -1,0 +1,29 @@
+2025-08-11 13:23:34.330 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-11 13:23:35.397 | INFO     | dify_rag_evaluator:set_adapt_prompts:30 - 正在修改评估prompt语言为中文......
+2025-08-11 13:25:06.759 | INFO     | dify_rag_evaluator:set_adapt_prompts:46 - 评估prompt语言已经修改为中文
+2025-08-11 13:25:06.759 | INFO     | dify_rag_evaluator:evaluate_dify_rag:250 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-11 13:25:06.909 | INFO     | dify_rag_evaluator:evaluate_dify_rag:258 - 加载了 100 条测试数据
+2025-08-11 13:25:07.409 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 1/100: 二氯二氟甲烷的检出限是多少？
+2025-08-11 13:25:07.410 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 13:25:07.410 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-11 13:25:07.410 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 13:25:07.410 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: False
+2025-08-11 13:25:07.734 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 2 个上下文片段
+2025-08-11 13:25:12.005 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 二氯二氟甲烷的检出限是0.4 μg/kg。...
+2025-08-11 13:25:12.005 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 2/100: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-11 13:25:12.006 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 13:25:12.006 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-11 13:25:12.006 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 13:25:12.006 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: False
+2025-08-11 13:25:12.357 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 3 个上下文片段
+2025-08-11 13:25:20.984 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 根据HJ605要求：
+- 98.5μg/kg（小于100mg/kg）应保留至整数位，即99μg/kg
+- 102μg/kg（小于100mg/kg）应保留至整数位，即102μg/kg
+
+注：虽然原文示例单位是mg/kg，但提问中给出的单位是μg/kg（均小于100mg/kg），因此统一按整数位保留。...
+2025-08-11 13:25:20.984 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 3/100: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响
+2025-08-11 13:25:20.985 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 13:25:20.985 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-11 13:25:20.985 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 13:25:20.985 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: False
+2025-08-11 13:25:21.635 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 3 个上下文片段

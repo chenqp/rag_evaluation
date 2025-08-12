@@ -1,0 +1,56 @@
+2025-08-08 18:00:30.757 | INFO     | __main__:evaluate_dify_retrieval:196 - 开始评估Dify知识库召回内容...
+2025-08-08 18:00:30.873 | INFO     | __main__:evaluate_dify_retrieval:200 - 加载了 100 条测试数据
+2025-08-08 18:00:30.873 | INFO     | __main__:create_ragas_dataset:108 - 开始创建RAGAS评估数据集...
+2025-08-08 18:00:30.874 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 1/100: 二氯二氟甲烷的检出限是多少？
+2025-08-08 18:00:30.874 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:30.874 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:30.874 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:00:31.397 | ERROR    | __main__:get_rag_answer:186 - 获取RAG答案失败: 404 Client Error: Not Found for url: http://10.10.0.22/e/8yda0srxv32hwupr/
+2025-08-08 18:00:31.397 | INFO     | __main__:create_ragas_dataset:131 - 检索到 1 个上下文片段
+2025-08-08 18:00:31.397 | INFO     | __main__:create_ragas_dataset:132 - 无答案
+2025-08-08 18:00:31.397 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 2/100: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-08 18:00:31.397 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:31.397 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:31.397 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:00:32.947 | ERROR    | __main__:get_rag_answer:186 - 获取RAG答案失败: 404 Client Error: Not Found for url: http://10.10.0.22/e/8yda0srxv32hwupr/
+2025-08-08 18:00:32.948 | INFO     | __main__:create_ragas_dataset:131 - 检索到 2 个上下文片段
+2025-08-08 18:00:32.948 | INFO     | __main__:create_ragas_dataset:132 - 无答案
+2025-08-08 18:00:32.948 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 3/100: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响
+2025-08-08 18:00:32.949 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:32.950 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:32.950 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:00:33.535 | ERROR    | __main__:get_rag_answer:186 - 获取RAG答案失败: 404 Client Error: Not Found for url: http://10.10.0.22/e/8yda0srxv32hwupr/
+2025-08-08 18:00:33.536 | INFO     | __main__:create_ragas_dataset:131 - 检索到 1 个上下文片段
+2025-08-08 18:00:33.536 | INFO     | __main__:create_ragas_dataset:132 - 无答案
+2025-08-08 18:00:33.536 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 4/100: 当苯和苯乙烯在空白试验中出现异常高值，可能的原因是什么？
+2025-08-08 18:00:33.536 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:33.536 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:33.536 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:00:34.125 | ERROR    | __main__:get_rag_answer:186 - 获取RAG答案失败: 404 Client Error: Not Found for url: http://10.10.0.22/e/8yda0srxv32hwupr/
+2025-08-08 18:00:34.125 | INFO     | __main__:create_ragas_dataset:131 - 检索到 1 个上下文片段
+2025-08-08 18:00:34.125 | INFO     | __main__:create_ragas_dataset:132 - 无答案
+2025-08-08 18:00:34.125 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 5/100: 空白试验分析结果需满足的条件中，目标物浓度需小于相关环保标准限值的多少？
+2025-08-08 18:00:34.125 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:34.125 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:34.125 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:00:34.876 | ERROR    | __main__:get_rag_answer:186 - 获取RAG答案失败: 404 Client Error: Not Found for url: http://10.10.0.22/e/8yda0srxv32hwupr/
+2025-08-08 18:00:34.877 | INFO     | __main__:create_ragas_dataset:131 - 检索到 1 个上下文片段
+2025-08-08 18:00:34.877 | INFO     | __main__:create_ragas_dataset:132 - 无答案
+2025-08-08 18:00:34.878 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 6/100: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的具体步骤及保存要求是什么？
+2025-08-08 18:00:34.878 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:34.879 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:34.879 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:00:35.490 | ERROR    | __main__:get_rag_answer:186 - 获取RAG答案失败: 404 Client Error: Not Found for url: http://10.10.0.22/e/8yda0srxv32hwupr/
+2025-08-08 18:00:35.490 | INFO     | __main__:create_ragas_dataset:131 - 检索到 1 个上下文片段
+2025-08-08 18:00:35.490 | INFO     | __main__:create_ragas_dataset:132 - 无答案
+2025-08-08 18:00:35.490 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 7/100: 土壤样品风干、粗粉碎、磨样分别使用哪些工具？
+2025-08-08 18:00:35.490 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:35.490 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:35.492 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:00:36.396 | ERROR    | __main__:get_rag_answer:186 - 获取RAG答案失败: 404 Client Error: Not Found for url: http://10.10.0.22/e/8yda0srxv32hwupr/
+2025-08-08 18:00:36.396 | INFO     | __main__:create_ragas_dataset:131 - 检索到 1 个上下文片段
+2025-08-08 18:00:36.396 | INFO     | __main__:create_ragas_dataset:132 - 无答案
+2025-08-08 18:00:36.398 | INFO     | __main__:create_ragas_dataset:114 - 处理问题 8/100: 实验用水的要求是什么？
+2025-08-08 18:00:36.398 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:00:36.398 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:00:36.398 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0

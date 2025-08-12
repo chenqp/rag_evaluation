@@ -1,0 +1,2 @@
+2025-08-08 21:04:32.451 | ERROR    | __main__:get_rag_answer:181 - 获取RAG答案失败: 'str' object has no attribute 'choices'
+2025-08-08 21:04:32.451 | INFO     | __main__:<module>:264 - 

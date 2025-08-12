@@ -1,0 +1,31 @@
+2025-08-09 15:49:19.068 | INFO     | __main__:evaluate_dify_rag:184 - 开始评估Dify知识库召回和RAG系统的答案...
+2025-08-09 15:49:19.212 | INFO     | __main__:evaluate_dify_rag:188 - 加载了 3 条测试数据
+2025-08-09 15:49:19.213 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-09 15:49:19.213 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-09 15:49:19.213 | INFO     | __main__:create_evaluation_dataset:108 - 开始创建RAGAS评估数据集...
+2025-08-09 15:49:19.220 | INFO     | __main__:create_evaluation_dataset:114 - 处理问题 1/3: 二氯二氟甲烷的检出限是多少？
+2025-08-09 15:49:19.220 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-09 15:49:31.875 | INFO     | __main__:create_evaluation_dataset:133 - 检索到 1 个上下文片段
+2025-08-09 15:49:31.875 | INFO     | __main__:create_evaluation_dataset:134 - RAG系统生成的答案: 二氯二氟甲烷的检出限为 **0.4 µg/kg**。...
+2025-08-09 15:49:31.875 | INFO     | __main__:create_evaluation_dataset:114 - 处理问题 2/3: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-09 15:49:31.875 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-09 15:50:58.386 | INFO     | __main__:create_evaluation_dataset:133 - 检索到 2 个上下文片段
+2025-08-09 15:50:58.386 | INFO     | __main__:create_evaluation_dataset:134 - RAG系统生成的答案: 根据HJ605要求，测定结果小于100 mg/kg时保留至整数位，大于或等于100 mg/kg时保留三位有效数字。  
+
+- **98.5 μg/kg**：转换为0.0985 mg/kg（小于100 mg/kg），应保留至整数位，即 **99 μg/kg**（保留两位有效数字）。  
+- **102 μg/kg**：转换为0.102 mg/kg（小于100 mg/kg），同样保留至整数位，即 **...
+2025-08-09 15:50:58.386 | INFO     | __main__:create_evaluation_dataset:114 - 处理问题 3/3: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响
+2025-08-09 15:50:58.386 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-09 15:51:43.053 | INFO     | __main__:create_evaluation_dataset:133 - 检索到 1 个上下文片段
+2025-08-09 15:51:43.055 | INFO     | __main__:create_evaluation_dataset:134 - RAG系统生成的答案: 土壤样品采集需遵循“随机”和“等量”原则，具体含义及对样品代表性的影响如下：
+
+1. **随机原则**  
+   - **含义**：采样时需避免主观选择，确保总体中每个个体有同等机会被选入样品。例如，通过随机方法确定采样点位置，而非根据人为判断选择特定区域。  
+   - **对代表性的影响**：随机性可减少人为干扰导致的偏差，使样品更接近总体的真实分布。若采样不随机（如仅选择表层土壤或特定区域）...
+2025-08-09 15:51:43.055 | INFO     | __main__:evaluate_dify_rag:204 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-09 15:51:43.055 | INFO     | __main__:evaluate_dify_rag:205 - API Base URL: https://api.deepseek.com/v1
+2025-08-09 15:51:44.048 | INFO     | __main__:evaluate_dify_rag:225 - 开始执行RAGAS评估...
+2025-08-09 15:53:16.095 | INFO     | __main__:evaluate_dify_rag:233 - 评估完成，结果如下:
+2025-08-09 15:53:16.095 | INFO     | __main__:evaluate_dify_rag:234 - {'llm_context_precision_with_reference': 0.6667, 'context_recall': 0.6667, 'faithfulness': 0.5333, 'nv_accuracy': 0.6667}
+2025-08-09 15:53:16.164 | INFO     | __main__:evaluate_dify_rag:239 - 评估结果已保存到 evaluation_results.csv
+2025-08-09 15:53:16.167 | INFO     | __main__:<module>:248 - 评估完成

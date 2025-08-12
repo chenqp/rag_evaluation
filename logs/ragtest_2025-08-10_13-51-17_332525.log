@@ -1,0 +1,8 @@
+2025-08-10 13:51:17.335 | INFO     | dify_rag_evaluator:evaluate_dify_rag:256 - 开始评估Dify知识库召回和RAG系统...
+2025-08-10 13:51:17.574 | INFO     | dify_rag_evaluator:evaluate_dify_rag:264 - 加载了 100 条测试数据
+2025-08-10 13:51:18.065 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 处理QA对 1/100: 二氯二氟甲烷的检出限是多少？
+2025-08-10 13:51:18.065 | INFO     | dify_rag_evaluator:retrieve:96 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 13:51:18.065 | INFO     | dify_rag_evaluator:retrieve:97 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 13:51:18.068 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - top_k: 3
+2025-08-10 13:51:18.068 | INFO     | dify_rag_evaluator:retrieve:125 - 检索配置 - 分数阈值启用: False
+2025-08-10 13:51:18.435 | ERROR    | __main__:main:10 - 评估过程中发生错误: 'list' object has no attribute 'get'

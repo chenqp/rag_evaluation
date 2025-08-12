@@ -1,0 +1,12 @@
+2025-08-09 21:30:05.904 | INFO     | __main__:main:271 - 成功加载配置文件
+2025-08-09 21:30:05.904 | INFO     | __main__:evaluate_dify_rag:191 - 开始评估Dify知识库召回和RAG系统的答案...
+2025-08-09 21:30:06.009 | INFO     | __main__:evaluate_dify_rag:195 - 加载了 1 条测试数据
+2025-08-09 21:30:06.009 | INFO     | __main__:evaluate_dify_rag:204 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-09 21:30:06.009 | INFO     | __main__:evaluate_dify_rag:205 - API Base URL: https://api.openai.com
+2025-08-09 21:30:07.579 | INFO     | dify_retrieval:__init__:20 - DifyRetrieval初始化成功
+2025-08-09 21:30:07.586 | INFO     | __main__:create_evaluation_dataset:120 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-09 21:30:07.586 | INFO     | dify_retrieval:retrieve:66 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-09 21:30:17.624 | INFO     | __main__:create_evaluation_dataset:139 - 检索到 2 个上下文片段
+2025-08-09 21:30:17.624 | INFO     | __main__:create_evaluation_dataset:140 - RAG系统生成的答案: 二氯二氟甲烷的检出限为0.4 µg/kg。...
+2025-08-09 21:30:17.629 | INFO     | __main__:evaluate_dify_rag:246 - 开始执行RAGAS评估,检索策略:hybrid_search...
+2025-08-09 21:30:21.880 | ERROR    | __main__:main:277 - 评估过程中发生错误: object EvaluationResult can't be used in 'await' expression

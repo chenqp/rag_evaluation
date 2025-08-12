@@ -1,0 +1,1917 @@
+2025-08-10 14:44:31.617 | INFO     | dify_rag_evaluator:evaluate_dify_rag:229 - 开始评估Dify知识库召回和RAG系统...
+2025-08-10 14:44:32.862 | INFO     | dify_rag_evaluator:evaluate_dify_rag:237 - 加载了 100 条测试数据
+2025-08-10 14:44:33.612 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 1/100: 二氯二氟甲烷的检出限是多少？
+2025-08-10 14:44:33.612 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:44:33.612 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:44:33.613 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:44:33.613 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:44:34.058 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 14:44:41.173 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 二氯二氟甲烷的检出限是0.4 μg/kg。...
+2025-08-10 14:44:41.177 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 2/100: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-10 14:44:41.177 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:44:41.177 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:44:41.177 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:44:41.177 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:44:41.601 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:44:48.580 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据HJ605要求：
+- 目标物含量为98.5μg/kg（小于100mg/kg），结果保留至整数位，即应表示为99μg/kg。
+- 目标物含量为102μg/kg（小于100mg/kg），结果保留至整数位，即应表示为102μg/kg。...
+2025-08-10 14:44:48.581 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 3/100: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响
+2025-08-10 14:44:48.581 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:44:48.581 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:44:48.581 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:44:48.581 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:44:49.023 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:00.571 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: “随机”原则指在采集样品时，必须避免主观因素，确保总体中的每个个体有同等机会被选入样品，以保证样品与总体的同质性。  
+“等量”原则要求相互比较的样品组应由相同数量的个体组成，避免因样本量差异导致代表性不均。  
+
+二者共同作用：  
+1. 随机性减少人为偏差，使样品更客观反映总体特征；  
+2. 等量性确保不同样品间可比性，避免因个体数量差异影响分析结果的公平性。  
+违反任一原则会降低样品代表...
+2025-08-10 14:45:00.571 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 4/100: 当苯和苯乙烯在空白试验中出现异常高值，可能的原因是什么？
+2025-08-10 14:45:00.571 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:00.573 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当苯和苯乙烯在空白试验中出现异常高值，可能的原因是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:00.573 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:00.573 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:00.974 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:06.731 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: Tenax可能变质失效，需进行确认，必要时需更换捕集管。...
+2025-08-10 14:45:06.732 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 5/100: 空白试验分析结果需满足的条件中，目标物浓度需小于相关环保标准限值的多少？
+2025-08-10 14:45:06.732 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:06.732 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白试验分析结果需满足的条件中，目标物浓度需小于相关环保标准限值的多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:06.733 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:06.733 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:07.133 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:12.371 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 目标物浓度需小于相关环保标准限值的5%。...
+2025-08-10 14:45:12.371 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 6/100: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的具体步骤及保存要求是什么？
+2025-08-10 14:45:12.371 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:12.371 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的具体步骤及保存要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:12.371 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:12.371 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:12.786 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:20.694 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的步骤如下：
+1. 称取1g（精确到0.1mg）金属铅
+2. 用30ml硝酸溶液加热溶解
+3. 冷却后用水定容至1L
+4. 贮存于聚乙烯瓶中，4°C以下冷藏保存，有效期两年
+
+也可直接购买市售有证标准溶液。...
+2025-08-10 14:45:20.694 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 7/100: 土壤样品风干、粗粉碎、磨样分别使用哪些工具？
+2025-08-10 14:45:20.694 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:20.694 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品风干、粗粉碎、磨样分别使用哪些工具？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:20.695 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:20.695 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:21.004 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:27.560 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤样品风干使用白色搪瓷盘及木盘；粗粉碎使用木锤、木滚、木棒、有机玻璃棒、有机玻璃板、硬质木板、无色聚乙烯薄膜；磨样使用玛瑙研磨机(球磨机)或玛瑙研钵、白色瓷研钵。...
+2025-08-10 14:45:27.560 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 8/100: 实验用水的要求是什么？
+2025-08-10 14:45:27.560 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:27.560 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实验用水的要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:27.560 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:27.560 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:27.872 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:34.837 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实验用水为新制备的去离子水。...
+2025-08-10 14:45:34.837 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 9/100: 硝酸溶液（1+1）在哪些标准贮备液的配制中被使用？
+2025-08-10 14:45:34.837 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:34.837 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 硝酸溶液（1+1）在哪些标准贮备液的配制中被使用？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:34.837 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:34.837 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:35.151 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:39.856 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 在铜标准贮备液（5.11）的配制中被使用。...
+2025-08-10 14:45:39.856 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 10/100: 空白试样制备时，加酸量需满足什么条件？
+2025-08-10 14:45:39.856 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:39.856 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白试样制备时，加酸量需满足什么条件？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:39.856 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:39.856 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:40.252 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:44.293 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 空白试样制备时的加酸量要与试样制备时的加酸量保持一致。...
+2025-08-10 14:45:44.293 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 11/100: 基体复杂的土壤或沉积物样品测定时，需采用仪器的什么功能？
+2025-08-10 14:45:44.293 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:44.293 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 基体复杂的土壤或沉积物样品测定时，需采用仪器的什么功能？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:44.293 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:44.293 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:44.607 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:48.955 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 仪器背景校正功能...
+2025-08-10 14:45:48.955 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 12/100: 使用 232.0nm 作为镍的吸收线时，如何减少镍三线光谱的影响？
+2025-08-10 14:45:48.955 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:48.956 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 使用 232.0nm 作为镍的吸收线时，如何减少镍三线光谱的影响？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:48.956 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:48.956 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:49.289 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:45:54.348 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 选择 0.2nm 的光谱通带可减少影响。...
+2025-08-10 14:45:54.348 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 13/100: 土壤加标回收实验中，铜的加标回收率范围和最终值有何要求？（以黄壤样品为例）
+2025-08-10 14:45:54.348 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:45:54.348 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤加标回收实验中，铜的加标回收率范围和最终值有何要求？（以黄壤样品为例）, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:45:54.348 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:45:54.348 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:45:54.754 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:46:05.019 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 对于含铜为22mg/kg的黄壤样品，加标量为17mg/kg和42mg/kg时的加标回收率范围及最终值要求如下：
+
+1. 加标量17mg/kg：
+   - 回收率范围：88.9%～105%
+   - 最终值：96.9% ± 12.4%
+
+2. 加标量42mg/kg：
+   - 回收率范围：92.7%～98.5%
+   - 最终值：95.5% ± 4.2%...
+2025-08-10 14:46:05.019 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 14/100: 每 20 个样品或每批次（少于 20 个）分析时，需进行哪些质量控制操作？（至少答 4 项）
+2025-08-10 14:46:05.019 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:05.019 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 每 20 个样品或每批次（少于 20 个）分析时，需进行哪些质量控制操作？（至少答 4 项）, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:05.019 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:05.019 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:05.452 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:46:15.131 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 1. 测定1个有证标准样品，其测定结果与保证值的相对误差应在±15%以内  
+2. 分析1个基体加标样品，加标回收率应在80%～120%之间  
+3. 分析1个平行样，平行样测定结果相对偏差应≤20%  
+4. 每批样品每个项目分析时做20%平行样品（5个样品以下时不少于1个）...
+2025-08-10 14:46:15.131 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 15/100: 有机溶剂选择需遵循哪些原则？
+2025-08-10 14:46:15.131 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:15.131 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 有机溶剂选择需遵循哪些原则？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:15.131 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:15.131 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:15.446 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:46:23.567 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 有机溶剂的选择原则包括：
+1. 根据相似相溶原理，选择与待测物极性相近的溶剂；
+2. 提取剂需与样品能良好分离，且不影响待测物的纯化与测定；
+3. 不能与样品发生反应；
+4. 毒性低、价格便宜；
+5. 沸点范围以45℃~80℃为宜。...
+2025-08-10 14:46:23.567 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 16/100: 制备时，对酸的使用有何要求？
+2025-08-10 14:46:23.567 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:23.568 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 制备时，对酸的使用有何要求？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:23.568 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:23.568 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:23.888 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:46:30.568 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 样品消解时应注意各种酸的加入顺序，且空白试样制备时的加酸量要与试样制备时的加酸量保持一致。操作时需佩戴防护器具，避免吸入呼吸道或接触皮肤和衣物，试剂配制和样品消解应在通风橱内进行。...
+2025-08-10 14:46:30.568 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 17/100: 对于基体复杂的土壤或沉积物样品，测定时需采取哪些措施？
+2025-08-10 14:46:30.568 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:30.568 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 对于基体复杂的土壤或沉积物样品，测定时需采取哪些措施？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:30.568 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:30.568 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:30.898 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:46:35.279 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 测定时需采用仪器背景校正功能。...
+2025-08-10 14:46:35.279 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 18/100: 初步判定样品中含有或不含有目标物时，对平行样或加标样品的替代物相对偏差要求是什么？
+2025-08-10 14:46:35.279 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:35.279 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 初步判定样品中含有或不含有目标物时，对平行样或加标样品的替代物相对偏差要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:35.279 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:35.279 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:36.016 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:46:42.759 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 初步判定样品中含有目标物时，平行样品中替代物相对偏差应在25%以内；若初步判定样品中不含有目标物，则须分析该样品的加标样品，该样品及加标样品中替代物相对偏差应在25%以内。...
+2025-08-10 14:46:42.759 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 19/100: 苯乙烯的检出限、测定下限和最小相对响应因子分别是多少？
+2025-08-10 14:46:42.759 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:42.759 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 苯乙烯的检出限、测定下限和最小相对响应因子分别是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:42.759 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:42.759 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:43.157 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 14:46:52.147 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 苯乙烯的检出限、测定下限和最小相对响应因子如下：
+
+| 序号 | 目标物中文名称 | 目标物英文名称 | 检出限 (μg/kg) | 测定下限 (μg/kg) | 最小相对响应因子 |
+|------|----------------|----------------|----------------|-------------------|---------------------|
+| 47 ...
+2025-08-10 14:46:52.148 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 20/100: 土壤监测项目的分析方法中，ICP-AES、GC-MS 分别代表什么？
+2025-08-10 14:46:52.148 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:52.148 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测项目的分析方法中，ICP-AES、GC-MS 分别代表什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:52.148 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:52.148 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:52.556 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:46:57.597 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: ICP-AES: 等离子发射光谱法  
+GC-MS: 气相色谱-质谱联用法...
+2025-08-10 14:46:57.597 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 21/100: 仪器性能检查中，BFB 溶液的注入方式有哪两种？
+2025-08-10 14:46:57.599 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:46:57.599 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 仪器性能检查中，BFB 溶液的注入方式有哪两种？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:46:57.599 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:46:57.599 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:46:57.994 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:04.674 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 1. 用微量注射器移取1～2μl BFB溶液直接注入气相色谱仪进行分析。  
+2. 将1～2μl BFB溶液加入到5ml空白试剂水中，通过吹扫捕集装置注入气相色谱仪进行分析。...
+2025-08-10 14:47:04.674 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 22/100: 空白加标样品的作用是什么？其目标物回收率的合格范围是多少？
+2025-08-10 14:47:04.675 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:04.675 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白加标样品的作用是什么？其目标物回收率的合格范围是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:04.675 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:04.675 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:05.083 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:11.138 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 空白加标样品的作用是检查样品是否存在基体效应。其目标物回收率的合格范围应在70%～130%。...
+2025-08-10 14:47:11.138 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 23/100: 四氯乙烯的第一特征离子和第二特征离子分别是什么？
+2025-08-10 14:47:11.138 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:11.138 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 四氯乙烯的第一特征离子和第二特征离子分别是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:11.138 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:11.138 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:11.547 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:16.874 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 四氯乙烯的第一特征离子是164，第二特征离子是129和131。...
+2025-08-10 14:47:16.875 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 24/100: 每批样品分析时，实验室空白的要求是什么？
+2025-08-10 14:47:16.876 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:16.876 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 每批样品分析时，实验室空白的要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:16.876 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:16.876 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:17.199 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:26.928 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 每批样品分析时，实验室空白的要求包括：
+
+1. 采样前在实验室将一份空白试剂水放入样品瓶中密封，带到采样现场。
+2. 与采样的样品瓶同时开盖和密封，之后随样品运回实验室。
+3. 按与样品相同的操作步骤进行试验，用于检查从样品采集到分析全过程是否受到污染。
+4. 不称取样品，按照与试样制备相同的步骤进行空白试样的制备。
+5. 按照与试样测定相同的仪器条件进行空白试样的测定。...
+2025-08-10 14:47:26.928 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 25/100: 土壤分类的六级分类制是什么？前三级和后三级分别以什么为主要单元？
+2025-08-10 14:47:26.928 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:26.928 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤分类的六级分类制是什么？前三级和后三级分别以什么为主要单元？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:26.930 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:26.930 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:27.267 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:34.532 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤分类的六级分类制是土纲、土类、亚类、土属、土种和变种。前三级（土纲、土类、亚类）为高级分类单元，以土类为主；后三级（土属、土种、变种）为基层分类单元，以土种为主。...
+2025-08-10 14:47:34.532 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 26/100: 当样品基体复杂时，除了提高酸度，还需注意什么？
+2025-08-10 14:47:34.532 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:34.532 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当样品基体复杂时，除了提高酸度，还需注意什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:34.534 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:34.534 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:34.853 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:41.066 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 当样品基体复杂时，除了提高酸度，还需注意以下两点：
+1. 标准曲线的酸度应与试样酸度保持一致；
+2. 对于基体复杂的土壤或沉积物样品，测定时需采用仪器背景校正功能。...
+2025-08-10 14:47:41.066 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 27/100: 目标物定性时，特征离子的定义是什么？
+2025-08-10 14:47:41.066 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:41.066 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 目标物定性时，特征离子的定义是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:41.066 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:41.066 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:41.809 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:48.011 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 特征离子指目标物质谱图中三个相对丰度最大的离子，若质谱图中没有三个相对丰度最大的离子时，则指相对丰度超过30%的所有离子。...
+2025-08-10 14:47:48.011 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 28/100: 六家实验室对 GSS-9 中铬的 6 次重复测定，相对误差范围是多少？
+2025-08-10 14:47:48.011 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:48.012 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 六家实验室对 GSS-9 中铬的 6 次重复测定，相对误差范围是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:48.012 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:48.012 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:48.430 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:47:54.822 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: -4.5%～0.4%...
+2025-08-10 14:47:54.822 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 29/100: 质量控制图中，上下警告线和控制线的含义是什么？
+2025-08-10 14:47:54.822 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:47:54.822 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质量控制图中，上下警告线和控制线的含义是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:47:54.822 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:47:54.822 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:47:55.138 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:02.851 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量控制图中：
+- 上下警告线（X±2S）：测定值落在此区间内表示分析正常，结果可靠；若落在警告线与控制线之间，虽结果可接受，但存在失控倾向，需予以注意。
+- 上下控制线（X±3S）：测定值超出此范围表示分析失控，结果不可信，需检查原因并重新测定。...
+2025-08-10 14:48:02.851 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 30/100: 校准曲线不合格时，应采取哪些措施？
+2025-08-10 14:48:02.851 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:02.851 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 校准曲线不合格时，应采取哪些措施？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:02.851 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:02.851 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:03.272 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:11.701 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 当校准曲线不合格时，应采取以下措施：
+1. 更换捕集管或色谱柱；
+2. 重新绘制校准曲线；
+3. 若采用最小二乘法校准曲线，需确保目标物计算结果在70%~130%范围内；
+4. 若校准确认标准溶液测定值与加入浓度比值不在80%~120%范围内，需采取校正措施，无效时重新绘制校准曲线。...
+2025-08-10 14:48:11.701 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 31/100: 氯甲烷的测定下限是多少？
+2025-08-10 14:48:11.701 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:11.702 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 氯甲烷的测定下限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:11.702 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:11.702 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:12.100 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:16.547 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 4.0 μg/kg...
+2025-08-10 14:48:16.547 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 32/100: 河流沉积物样品中铜的加标回收率（加标量 17mg/kg）范围和最终值是多少？
+2025-08-10 14:48:16.547 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:16.547 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 河流沉积物样品中铜的加标回收率（加标量 17mg/kg）范围和最终值是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:16.547 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:16.547 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:16.981 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:22.497 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 加标回收率范围：87.4%～100%  
+加标回收率最终值：94.3% ± 9.0%...
+2025-08-10 14:48:22.497 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 33/100: BFB 溶液检查中，质量 174 的离子丰度标准是什么？
+2025-08-10 14:48:22.497 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:22.497 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: BFB 溶液检查中，质量 174 的离子丰度标准是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:22.497 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:22.499 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:22.895 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:27.728 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量174的离子丰度标准应大于质量95的50%。...
+2025-08-10 14:48:27.728 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 34/100: 每批次样品分析结束后，标准系列中间浓度点的核查要求是什么？
+2025-08-10 14:48:27.728 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:27.728 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 每批次样品分析结束后，标准系列中间浓度点的核查要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:27.728 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:27.728 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:28.125 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:32.189 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 中间浓度测定值与标准值的相对误差应在±10%以内。...
+2025-08-10 14:48:32.189 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 35/100: 1,3 - 二氯丙烷的出峰顺序对应的序号是多少？
+2025-08-10 14:48:32.189 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:32.189 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 1,3 - 二氯丙烷的出峰顺序对应的序号是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:32.189 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:32.189 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:32.624 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:38.409 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据表B.1，1,3-二氯丙烷未列出，因此无法提供其出峰顺序对应的序号。...
+2025-08-10 14:48:38.409 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 36/100: 实验室间相对标准偏差对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？
+2025-08-10 14:48:38.411 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:38.411 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实验室间相对标准偏差对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:38.411 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:38.411 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:38.848 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:44.812 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的知识库内容，没有关于5.0μg/kg和100μg/kg统一样品的实验室间相对标准偏差范围的具体数据。...
+2025-08-10 14:48:44.812 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 37/100: 加标回收率最终值的表示方式是什么？
+2025-08-10 14:48:44.812 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:44.812 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 加标回收率最终值的表示方式是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:44.812 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:44.812 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:45.120 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:51.057 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 加标回收率最终值的表示方式为：平均值 ± 标准偏差（例如：96.9% ± 11.4%）。...
+2025-08-10 14:48:51.057 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 38/100: BFB 溶液检查中，质量 176 的离子丰度标准是什么？
+2025-08-10 14:48:51.058 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:51.058 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: BFB 溶液检查中，质量 176 的离子丰度标准是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:51.058 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:51.058 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:51.455 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:48:56.619 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量176的离子丰度标准为质量174的93%～101%。...
+2025-08-10 14:48:56.619 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 39/100: 当空白试验未满足要求时，重新分析样品的前提是什么？
+2025-08-10 14:48:56.619 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:48:56.619 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当空白试验未满足要求时，重新分析样品的前提是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:48:56.619 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:48:56.619 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:48:57.026 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:00.841 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 采取措施排除污染...
+2025-08-10 14:49:00.841 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 40/100: GSS-12 中锌的相对误差最终值是多少？
+2025-08-10 14:49:00.842 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:00.842 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: GSS-12 中锌的相对误差最终值是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:00.842 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:00.842 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:01.269 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:09.205 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: GSS-12中锌的相对误差最终值为-1.3%±7.0%。...
+2025-08-10 14:49:09.205 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 41/100: 校准曲线中，相对响应因子（RRF）的 RSD 合格上限是多少？
+2025-08-10 14:49:09.205 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:09.205 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 校准曲线中，相对响应因子（RRF）的 RSD 合格上限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:09.205 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:09.205 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:09.610 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:13.724 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 20%...
+2025-08-10 14:49:13.724 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 42/100: 运输空白和全程序空白的采集频率是多少？
+2025-08-10 14:49:13.724 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:13.724 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 运输空白和全程序空白的采集频率是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:13.725 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:13.725 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:14.034 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:19.491 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的知识库内容，没有提及运输空白和全程序空白的采集频率信息。...
+2025-08-10 14:49:19.491 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 43/100: 特征离子的相对丰度变化允许范围是多少？
+2025-08-10 14:49:19.491 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:19.491 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 特征离子的相对丰度变化允许范围是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:19.491 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:19.493 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:19.892 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:25.807 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实际样品中目标物质谱图中特征离子的相对丰度变化应在校准确认标准溶液的±30%之内。...
+2025-08-10 14:49:25.807 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 44/100: 六家实验室对 GSD-5a 中锌的 6 次重复测定，相对误差范围是多少？
+2025-08-10 14:49:25.807 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:25.807 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 六家实验室对 GSD-5a 中锌的 6 次重复测定，相对误差范围是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:25.807 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:25.807 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:26.234 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:31.907 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 六家实验室对 GSD-5a 中锌的 6 次重复测定，相对误差范围是 -0.8%～1.1%。...
+2025-08-10 14:49:31.907 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 45/100: 仪器性能检查中，若软件不能自动判定 BFB 离子丰度是否符合标准，应如何处理？
+2025-08-10 14:49:31.907 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:31.907 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 仪器性能检查中，若软件不能自动判定 BFB 离子丰度是否符合标准，应如何处理？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:31.907 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:31.907 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:32.318 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:40.510 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若仪器软件不能自动判定BFB关键离子丰度是否符合标准，可通过取峰顶扫描点及其前后两个扫描点离子丰度的平均值扣除背景值后获得关键离子丰度，并应符合表1标准。背景值的选取可以是BFB出峰前20次扫描点中的任意一点，该背景值应是柱流失或仪器背景离子产生的。...
+2025-08-10 14:49:40.510 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 46/100: 基体加标样品的加标回收率合格范围是多少？
+2025-08-10 14:49:40.510 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:40.510 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 基体加标样品的加标回收率合格范围是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:40.510 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:40.510 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:40.908 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:45.932 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 基体加标样品的加标回收率合格范围是80%～120%。...
+2025-08-10 14:49:45.932 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 47/100: 重复性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？
+2025-08-10 14:49:45.932 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:45.934 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 重复性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:45.934 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:45.934 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:46.355 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:51.683 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据上下文提供的信息，未提及5.0μg/kg和100μg/kg统一样品的重复性限数据，因此无法回答该问题。...
+2025-08-10 14:49:51.683 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 48/100: 空白试验中，若目标物浓度同时满足三个条件，应取哪个作为判定标准？
+2025-08-10 14:49:51.683 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:51.683 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白试验中，若目标物浓度同时满足三个条件，应取哪个作为判定标准？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:51.683 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:51.685 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:52.089 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:49:56.606 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 应取三个条件中的最大者作为判定标准。...
+2025-08-10 14:49:56.606 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 49/100: 四极杆质谱与离子阱质谱在 BFB 离子丰度标准上有何区别？
+2025-08-10 14:49:56.606 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:49:56.606 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 四极杆质谱与离子阱质谱在 BFB 离子丰度标准上有何区别？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:49:56.606 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:49:56.606 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:49:57.011 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:10.379 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 四极杆质谱的BFB关键离子丰度标准需符合表1规定，而离子阱质谱的标准可参照仪器制造商的说明执行。具体区别如下：
+
+1. 四极杆质谱标准（表1）：
+   质量离子    丰度标准
+   50         质量95的8%～40%
+   75         质量95的30%～80%
+   95         基峰，100%相对丰度
+   96         质量95的5%～9%
+   173 ...
+2025-08-10 14:50:10.379 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 50/100: 有证标准样品的测定结果与保证值的相对误差允许范围是多少？
+2025-08-10 14:50:10.379 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:10.380 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 有证标准样品的测定结果与保证值的相对误差允许范围是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:10.380 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:10.381 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:10.707 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:14.996 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: ±15%以内...
+2025-08-10 14:50:14.996 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 51/100: 再现性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？
+2025-08-10 14:50:14.996 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:14.996 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 再现性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:14.996 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:14.996 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:15.415 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:20.849 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的数据，文本中没有提到关于5.0μg/kg和100μg/kg统一样品的再现性限范围。因此无法回答这个问题。...
+2025-08-10 14:50:20.849 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 52/100: 当样品含水率大于 10% 时，提取液体积Vc​的计算依据是什么？
+2025-08-10 14:50:20.849 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:20.849 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当样品含水率大于 10% 时，提取液体积Vc​的计算依据是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:20.849 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:20.849 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:21.260 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:27.176 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 当样品含水率大于10%时，提取液体积Vc应为甲醇与样品中水的体积之和。...
+2025-08-10 14:50:27.176 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 53/100: 标准曲线的相关系数合格下限是多少？
+2025-08-10 14:50:27.178 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:27.178 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 标准曲线的相关系数合格下限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:27.178 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:27.178 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:27.499 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:31.702 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 标准曲线的相关系数应 ≥ 0.999。...
+2025-08-10 14:50:31.702 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 54/100: 全程序空白的作用是什么？
+2025-08-10 14:50:31.702 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:31.702 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 全程序空白的作用是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:31.702 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:31.702 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:32.025 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:36.728 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 全程序空白的作用是检查从样品采集到分析全过程是否受到污染。...
+2025-08-10 14:50:36.728 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 55/100: GSS-12 中铬的相对误差最终值是多少？
+2025-08-10 14:50:36.728 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:36.728 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: GSS-12 中铬的相对误差最终值是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:36.728 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:36.728 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:37.150 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:41.799 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: GSS-12中铬的相对误差最终值为0.4% ± 4.0%。...
+2025-08-10 14:50:41.799 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 56/100: 目标物定量时，若采用非线性校准曲线，试料中目标物质量浓度如何计算？
+2025-08-10 14:50:41.799 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:41.800 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 目标物定量时，若采用非线性校准曲线，试料中目标物质量浓度如何计算？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:41.800 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:41.800 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:42.190 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:46.918 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 试料中目标物质量浓度通过相应的非线性校准曲线计算。...
+2025-08-10 14:50:46.918 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 57/100: 当替代物回收率不合格且重复后仍不合格时，说明存在什么问题？
+2025-08-10 14:50:46.918 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:46.919 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当替代物回收率不合格且重复后仍不合格时，说明存在什么问题？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:46.919 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:46.919 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:47.317 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:52.145 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 样品存在基体效应。...
+2025-08-10 14:50:52.145 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 58/100: 标准系列零浓度点的核查要求是什么？
+2025-08-10 14:50:52.145 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:52.145 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 标准系列零浓度点的核查要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:52.145 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:52.145 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:50:52.457 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:50:59.982 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 标准系列零浓度点测定结果应低于方法检出限。...
+2025-08-10 14:50:59.982 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 59/100: 质谱仪离子源污染时，可能会导致什么结果？
+2025-08-10 14:50:59.982 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:50:59.982 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质谱仪离子源污染时，可能会导致什么结果？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:50:59.982 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:50:59.982 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:00.314 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:07.477 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质谱仪离子源污染时，可能会导致以下结果：
+1. 灵敏度下降，检测限升高；
+2. 质谱图质量变差，分辨率降低；
+3. 质谱图库检索匹配度降低；
+4. 定量分析结果不准确；
+5. 需要更频繁的调谐和维护。...
+2025-08-10 14:51:07.477 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 60/100: 使用气相色谱 - 质谱联用仪分析土壤中目标物时，仪器性能检查的流程是什么？
+2025-08-10 14:51:07.477 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:07.477 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 使用气相色谱 - 质谱联用仪分析土壤中目标物时，仪器性能检查的流程是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:07.477 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:07.477 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:07.796 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:21.680 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据土壤环境监测技术规范，使用气相色谱-质谱联用仪分析土壤中挥发性有机物时，仪器性能检查应包括以下流程（具体参数需按仪器说明书设定）：
+1. 质谱校准：使用全氟三丁胺（PFTBA）进行质量校准，确保质量轴和分辨率符合要求
+2. 色谱系统检查：通过标准溶液测试保留时间重现性（RSD≤3%）
+3. 灵敏度测试：注入5.0ng八氟萘（OFN），信噪比应≥10:1
+4. 系统空白：运行空白样品确认无目标物...
+2025-08-10 14:51:21.680 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 61/100: 土壤监测的常规项目包括哪些？
+2025-08-10 14:51:21.680 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:21.680 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测的常规项目包括哪些？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:21.680 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:21.680 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:22.004 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:30.440 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 常规项目包括：
+- 基本项目：pH、阳离子交换量（每3年一次）
+- 重点项目：镉、铬、汞、砷、铅、铜、锌、镍、六六六、滴滴涕（农田在夏收或秋收后采样）...
+2025-08-10 14:51:30.440 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 62/100: 哪种布点方法适用于监测区域内土壤污染物含量变化较大的情况？
+2025-08-10 14:51:30.440 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:30.440 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 哪种布点方法适用于监测区域内土壤污染物含量变化较大的情况？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:30.440 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:30.440 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:30.770 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:35.621 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 系统随机布点。...
+2025-08-10 14:51:35.621 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 63/100: 区域土壤环境背景监测中，采样点应避开铁路、公路至少多少距离？
+2025-08-10 14:51:35.621 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:35.621 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 区域土壤环境背景监测中，采样点应避开铁路、公路至少多少距离？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:35.621 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:35.621 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:35.918 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:40.412 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 300m以上...
+2025-08-10 14:51:40.413 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 64/100: 农田土壤混合样的分点数一般在多少个之间？
+2025-08-10 14:51:40.413 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:40.413 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 农田土壤混合样的分点数一般在多少个之间？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:40.413 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:40.413 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:40.740 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:44.896 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 5～20个。...
+2025-08-10 14:51:44.896 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 65/100: 土壤采样记录应标注什么？
+2025-08-10 14:51:44.896 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:44.896 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤采样记录应标注什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:44.896 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:44.896 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:45.213 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:52.168 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤采样记录应标注以下内容：
+
+采用地点  
+东经  
+北纬  
+样品编号  
+采样日期  
+样品类别  
+采样人员  
+采样层次  
+采样深度(cm)  
+样品描述  
+土壤颜色  
+植物根系  
+土壤质地  
+砂砾含量  
+土壤湿度  
+其它异物  
+采样点示意图（自下而上）  
+植被描述...
+2025-08-10 14:51:52.168 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 66/100: 系统随机布点的特点是？
+2025-08-10 14:51:52.170 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:52.170 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 系统随机布点的特点是？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:52.170 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:52.170 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:52.502 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:51:59.081 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 系统随机布点的特点是将监测区域分成面积相等的几部分（网格划分），每网格内布设一个采样点。如果区域内土壤污染物含量变化较大，系统随机布点比简单随机布点所采样品的代表性要好。...
+2025-08-10 14:51:59.081 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 67/100: 计算网格间距 L 时，若采样单元面积 A 的单位是 km²，则 L 的单位是
+2025-08-10 14:51:59.082 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:51:59.082 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 计算网格间距 L 时，若采样单元面积 A 的单位是 km²，则 L 的单位是, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:51:59.082 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:51:59.082 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:51:59.505 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:52:04.503 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: km...
+2025-08-10 14:52:04.503 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 68/100: 土壤环境监测中，常规项目的监测频次原则上不低于
+2025-08-10 14:52:04.503 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:52:04.504 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤环境监测中，常规项目的监测频次原则上不低于, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:52:04.504 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:52:04.504 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:52:04.838 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:52:10.658 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 每3年一次，但不可低于5年一次...
+2025-08-10 14:52:10.658 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 69/100: 土壤环境监测类型主要包括
+2025-08-10 14:52:10.658 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:52:10.658 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤环境监测类型主要包括, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:52:10.658 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:52:10.658 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:52:10.980 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:52:15.959 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 区域土壤环境背景监测、农田土壤环境质量监测、建设项目土壤环境评价监测和土壤污染事故监测。...
+2025-08-10 14:52:15.959 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 70/100: 土壤采样前需要收集哪些主要资料？
+2025-08-10 14:52:15.959 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:52:15.959 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤采样前需要收集哪些主要资料？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:52:15.959 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:52:15.959 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:52:16.285 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:52:27.977 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤采样前需要收集的主要资料包括：
+1. 监测区域的交通图、土壤图、地质图、大比例尺地形图等；
+2. 监测区域土类、成土母质等土壤信息资料；
+3. 工程建设或生产过程对土壤造成影响的环境研究资料；
+4. 造成土壤污染事故的主要污染物的毒性、稳定性以及如何消除等资料；
+5. 土壤历史资料和相应的法律（法规）；
+6. 监测区域工农业生产及排污、污灌、化肥农药施用情况资料；
+7. 监测区域气候资料（温度...
+2025-08-10 14:52:27.977 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 71/100: 土壤剖面采样的注意事项有哪些？
+2025-08-10 14:52:27.977 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:52:27.977 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤剖面采样的注意事项有哪些？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:52:27.977 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:52:27.977 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:52:28.299 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:52:42.268 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤剖面采样的注意事项包括：
+1. 采样点可采表层样或土壤剖面，一般监测采集表层土（深度0~20cm），特殊监测需采集剖面样品。
+2. 剖面规格一般为长1.5m，宽0.8m，深1.2m，挖掘时观察面向阳，表土和底土分两侧放置。
+3. 每层样品采集1kg左右，潮湿样品需内衬塑料袋（无机化合物测定）或置于玻璃瓶内（有机化合物测定）。
+4. 专人填写样品标签和采样记录，标签一式两份，标注采样时间、地点、...
+2025-08-10 14:52:42.268 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 72/100: 农田土壤混合样的采集目的和分点数要求是什么？
+2025-08-10 14:52:42.268 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:52:42.268 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 农田土壤混合样的采集目的和分点数要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:52:42.268 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:52:42.268 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:52:42.587 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:52:49.873 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 农田土壤混合样的采集目的是为了保证样品的代表性并减低监测费用。组成混合样的分点数要在5～20个。...
+2025-08-10 14:52:49.873 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 73/100: 土壤采样器具中的安全防护用品包括哪些？
+2025-08-10 14:52:49.874 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:52:49.874 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤采样器具中的安全防护用品包括哪些？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:52:49.874 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:52:49.874 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:52:50.199 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:52:54.829 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 工作服、工作鞋、安全帽、药品箱等。...
+2025-08-10 14:52:54.829 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 74/100: 当使用四极杆质谱时，若 BFB 关键离子丰度不符合标准，应采取什么措施？
+2025-08-10 14:52:54.829 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:52:54.829 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当使用四极杆质谱时，若 BFB 关键离子丰度不符合标准，应采取什么措施？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:52:54.829 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:52:54.829 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:52:55.242 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:00.558 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若 BFB 关键离子丰度不符合表1标准，需对质谱仪的参数进行调整或者考虑清洗离子源。...
+2025-08-10 14:53:00.558 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 75/100: 某实验室分析土壤中苯系物时，空白样品中苯浓度为方法检出限的 1.2 倍。该结果是否符合空白控制要求？应采取哪些措施？
+2025-08-10 14:53:00.558 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:00.559 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 某实验室分析土壤中苯系物时，空白样品中苯浓度为方法检出限的 1.2 倍。该结果是否符合空白控制要求？应采取哪些措施？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:00.559 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:00.559 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:00.993 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:10.375 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据空白试验的控制要求，空白样品中目标物浓度应小于方法检出限。该实验室空白样品中苯浓度为方法检出限的1.2倍，不符合控制要求。
+
+应采取的措施：
+1. 排除污染并重新分析同批样品；
+2. 若发现苯异常高值，需确认Tenax是否变质失效，必要时更换捕集管；
+3. 若怀疑样品受到污染，需分析运输空白和全程序空白样品，查找污染原因。...
+2025-08-10 14:53:10.375 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 76/100: 实际样品中目标物质谱图特征离子的相对丰度变化应在校准确认标准溶液的多少范围内？
+2025-08-10 14:53:10.376 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:10.376 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实际样品中目标物质谱图特征离子的相对丰度变化应在校准确认标准溶液的多少范围内？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:10.376 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:10.376 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:10.763 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:18.035 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实际样品中目标物质谱图特征离子的相对丰度变化应在校准确认标准溶液的±30%之内。...
+2025-08-10 14:53:18.035 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 77/100: 平行样测定结果的相对偏差应满足什么要求？
+2025-08-10 14:53:18.036 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:18.036 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 平行样测定结果的相对偏差应满足什么要求？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:18.036 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:18.036 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:18.362 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:22.628 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 平行样测定结果相对偏差应 ≤20%。...
+2025-08-10 14:53:22.628 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 78/100: 简述土壤样品风干至磨样的完整操作步骤。
+2025-08-10 14:53:22.629 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:22.629 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 简述土壤样品风干至磨样的完整操作步骤。, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:22.629 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:22.629 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:22.946 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:37.717 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤样品预处理完整操作步骤如下：  
+
+1. **风干**：  
+   - 将土样放置于风干盘中，摊成2～3cm的薄层。  
+   - 适时压碎、翻动，拣出碎石、砂砾、植物残体。  
+
+2. **粗磨**：  
+   - 将风干样品倒在有机玻璃板上，用木锤敲打，木滚、木棒或有机玻璃棒压碎。  
+   - 拣出杂质，混匀后采用四分法取压碎样，过孔径0.25mm（20目）尼龙筛。  
+   - 过筛后...
+2025-08-10 14:53:37.717 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 79/100: 使用吹扫捕集测定土壤中挥发性有机物时，样品前处理的关键步骤是什么？
+2025-08-10 14:53:37.718 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:37.718 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 使用吹扫捕集测定土壤中挥发性有机物时，样品前处理的关键步骤是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:37.718 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:37.718 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:38.036 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:42.608 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤样品预处理方法...
+2025-08-10 14:53:42.609 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 80/100: 土壤样品中重金属（如铅、镉）的消解操作步骤是什么？
+2025-08-10 14:53:42.609 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:42.609 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品中重金属（如铅、镉）的消解操作步骤是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:42.609 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:42.609 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:43.007 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:47.868 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的知识库内容，未提及具体的消解操作步骤，因此无法回答该问题。...
+2025-08-10 14:53:47.868 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 81/100: 土壤背景值与土壤筛选值的区别？
+2025-08-10 14:53:47.868 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:47.868 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤背景值与土壤筛选值的区别？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:47.869 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:47.869 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:48.175 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:53:58.166 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤背景值是指未受或很少受人类活动影响的自然环境中土壤元素的含量水平，通常以土类或成土母质母岩类型为单元进行监测；而土壤筛选值（如DDSB计算中提到的标准偏离背景值的程度）则是人为设定的用于评估土壤污染风险的阈值，通过比较当前检测值与背景值的偏离程度来判断污染状况。两者核心区别在于：背景值反映自然本底状态，筛选值是基于背景值人为制定的管理标准。...
+2025-08-10 14:53:58.166 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 82/100: 土壤含水率测定的操作步骤是什么？
+2025-08-10 14:53:58.166 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:53:58.168 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤含水率测定的操作步骤是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:53:58.168 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:53:58.168 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:53:58.471 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:54:05.696 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 沉积物样品含水率按照GB17378.5测定。...
+2025-08-10 14:54:05.696 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 83/100: 替代物、内标的作用分别是什么？
+2025-08-10 14:54:05.696 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:54:05.696 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 替代物、内标的作用分别是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:54:05.696 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:54:05.696 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:54:06.105 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:54:12.745 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 替代物的作用：在样品提取或其他前处理之前加入，通过回收率评价样品基体、样品处理过程对分析结果的影响。
+
+内标的作用：在样品分析之前加入，用于目标物的定量分析。...
+2025-08-10 14:54:12.745 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 84/100: 方法检出限与测定下限的区别是什么？
+2025-08-10 14:54:12.746 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:54:12.746 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 方法检出限与测定下限的区别是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:54:12.746 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:54:12.747 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:54:13.069 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 14:54:19.738 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 方法检出限是指能够可靠检测到目标物的最低浓度，而测定下限是指能够准确定量目标物的最低浓度。通常测定下限高于检出限。例如，铜的检出限为1mg/kg，测定下限为4mg/kg。...
+2025-08-10 14:54:19.738 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 85/100: 实验室内相对标准偏差（RSD）与实验室间相对标准偏差的区别？
+2025-08-10 14:54:19.738 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:54:19.738 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实验室内相对标准偏差（RSD）与实验室间相对标准偏差的区别？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:54:19.738 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:54:19.738 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:54:20.154 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:54:30.823 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实验室内相对标准偏差（RSD）是指同一实验室在重复测定同一样品时结果的离散程度，反映实验室内部精密度。  
+实验室间相对标准偏差（RSD）是指不同实验室测定同一样品时结果的离散程度，反映实验室间的一致性和方法的重现性。  
+
+例如：  
+- 实验室内RSD为1.0%～38.6%（低浓度）和1.0%～15.6%（高浓度）；  
+- 实验室间RSD为0.2%～57.4%（低浓度）和0.3%～15.0%...
+2025-08-10 14:54:30.823 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 86/100: 在土壤监测中，混合样的四种采集方法（对角线法、梅花点法、棋盘式法、蛇形法）的分点数量和适用场景？
+2025-08-10 14:54:30.823 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:54:30.823 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 在土壤监测中，混合样的四种采集方法（对角线法、梅花点法、棋盘式法、蛇形法）的分点数量和适用场景？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:54:30.823 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:54:30.823 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:54:31.584 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:54:42.648 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 1. 蛇形法：分点15个左右，适用于面积较大、土壤不均匀且地势不平坦的地块，多用于农业污染型土壤。  
+2. 梅花点法：分点5个左右，适用于面积较小、地势平坦、土壤组成和污染程度较均匀的地块。  
+3. 棋盘式法：分点10个左右，适用于中等面积、地势平坦但土壤不够均匀的地块；若受污泥、垃圾等固体废物污染，分点需20个以上。  
+4. 对角线法：未在提供信息中提及具体分点数量及适用场景。...
+2025-08-10 14:54:42.649 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 87/100: 采样误差、制样误差和分析误差的主要来源及控制措施。
+2025-08-10 14:54:42.649 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:54:42.650 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 采样误差、制样误差和分析误差的主要来源及控制措施。, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:54:42.650 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:54:42.650 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:54:43.967 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:00.541 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 采样误差、制样误差和分析误差的主要来源及控制措施如下：
+
+1. **采样误差**  
+   - **主要来源**：采样过程中样品的不均匀性、采样方法不当、采样点选择不合理等。  
+   - **控制措施**：采用科学的采样方法，确保采样点具有代表性，避免人为干扰，使用标准化的采样工具。  
+
+2. **制样误差 (PE)**  
+   - **主要来源**：研磨、筛分和贮存过程中的交叉污染、待测组...
+2025-08-10 14:55:00.541 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 88/100: 为何要求替代物加标回收率需在 70%~130%？
+2025-08-10 14:55:00.542 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:00.542 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 为何要求替代物加标回收率需在 70%~130%？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:00.542 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:00.542 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:01.093 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:07.266 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 替代物加标回收率需在70%~130%是为了确保分析方法的准确性和可靠性。若回收率超出此范围，可能表明样品存在基体效应或其他干扰因素，需要重新分析或采取纠正措施。...
+2025-08-10 14:55:07.266 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 89/100: 中间浓度点核查的相对误差要求是什么？
+2025-08-10 14:55:07.266 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:07.266 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 中间浓度点核查的相对误差要求是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:07.266 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:07.266 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:07.599 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:11.974 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 中间浓度测定值与标准值的相对误差应在±10%以内。...
+2025-08-10 14:55:11.974 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 90/100: 若某批次样品的运输空白中目标物浓度超过方法检出限，应如何处理？
+2025-08-10 14:55:11.974 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:11.974 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 若某批次样品的运输空白中目标物浓度超过方法检出限，应如何处理？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:11.974 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:11.974 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:12.370 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:18.323 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若运输空白中目标物浓度超过方法检出限，应查找原因，采取措施排除污染后重新采集样品分析。...
+2025-08-10 14:55:18.323 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 91/100: 质量控制图的绘制依据是什么？
+2025-08-10 14:55:18.324 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:18.324 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质量控制图的绘制依据是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:18.324 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:18.324 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:18.645 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:24.892 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量控制图的绘制依据是：以质控样的保证值X作为中心线，X±2S作为上下警告线，X±3S作为上下控制线的基本数据，在95%的置信水平下绘制准确度质控图。...
+2025-08-10 14:55:24.892 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 92/100: 土壤样品分析记录的填写和修改有哪些规范要求？
+2025-08-10 14:55:24.892 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:24.892 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品分析记录的填写和修改有哪些规范要求？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:24.894 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:24.894 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:26.216 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:39.570 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据《土壤环境监测技术规范》，土壤样品分析记录的填写和修改需遵循以下规范要求：  
+1. **填写要求**：  
+   - 记录应完整、准确、清晰，包含样品编号、检测项目、分析方法、仪器参数、测定结果（含单位，如mg/kg、ml等）及操作人员等信息。  
+   - 数据单位需使用标准符号（如“μl”“ml”），避免使用斜杠格式。  
+
+2. **修改要求**：  
+   - 修改时需划改（保留原记...
+2025-08-10 14:55:39.570 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 93/100: 在土壤样品消解过程中，有哪些注意事项？
+2025-08-10 14:55:39.570 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:39.570 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 在土壤样品消解过程中，有哪些注意事项？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:39.570 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:39.570 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:39.894 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:46.681 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 在土壤样品消解过程中，需要注意以下事项：
+1. 样品消解时应注意各种酸的加入顺序。
+2. 视消解情况，可适当补加硝酸、高氯酸等酸。
+3. 调整消解温度和时间等条件。...
+2025-08-10 14:55:46.681 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 94/100: 土壤监测中，第一方法、第二方法、第三方法的定义及适用场景有何不同？
+2025-08-10 14:55:46.681 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:46.682 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测中，第一方法、第二方法、第三方法的定义及适用场景有何不同？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:46.682 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:46.682 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:46.984 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:55:59.134 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤监测中的三种方法定义及适用场景如下：
+
+1. 第一方法（标准方法/仲裁方法）：采用《土壤环境质量标准》中指定的分析方法（表10-1），具有法定效力，适用于争议仲裁或标准符合性判定场景。
+
+2. 第二方法：由权威部门（如国家生态环境主管部门）正式规定或推荐的分析方法，适用于常规监测或特定管理要求场景。
+
+3. 第三方法：允许各地根据实际情况选择等效方法，但需通过标准样品验证或比对实验，确保检出限...
+2025-08-10 14:55:59.134 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 95/100: 土壤监测中，每批样品分析前为何需进行仪器性能检查？
+2025-08-10 14:55:59.134 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:55:59.134 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测中，每批样品分析前为何需进行仪器性能检查？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:55:59.135 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:55:59.135 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:55:59.440 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:56:04.785 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 每批样品分析前进行仪器性能检查是为了确保仪器的准确性和稳定性，从而保证监测数据的可靠性和可比性。...
+2025-08-10 14:56:04.785 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 96/100: 基体加标与空白加标的主要区别是什么？
+2025-08-10 14:56:04.785 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:56:04.785 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 基体加标与空白加标的主要区别是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:56:04.785 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:56:04.785 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:56:05.511 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:56:12.058 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 基体加标是在样品中添加已知量的待测目标物，用于评价目标物的回收率和样品的基体效应；空白加标是在空白试样中添加已知量的待测目标物，用于验证分析过程的准确性和排除污染。...
+2025-08-10 14:56:12.058 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 97/100: 消解过程中，若样品基体复杂，应如何调整实验条件以保证测定准确性？
+2025-08-10 14:56:12.058 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:56:12.058 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 消解过程中，若样品基体复杂，应如何调整实验条件以保证测定准确性？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:56:12.058 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:56:12.060 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:56:12.384 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:56:19.034 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若样品基体复杂，可适当提高试样酸度，并确保标准曲线的酸度与试样酸度保持一致。同时，在消解过程中可补加硝酸、高氯酸等酸，调整消解温度和时间等条件。...
+2025-08-10 14:56:19.034 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 98/100: 土壤监测中，仪器性能检查内容包括哪些？
+2025-08-10 14:56:19.034 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:56:19.034 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测中，仪器性能检查内容包括哪些？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:56:19.034 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:56:19.034 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:56:19.354 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:56:26.242 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据《土壤环境监测技术规范》，土壤分析测定中仪器性能检查的具体内容未在提供的上下文中明确列出。建议查阅完整规范或相关标准获取详细信息。...
+2025-08-10 14:56:26.242 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 99/100: 目标物定性的两个主要依据是什么？
+2025-08-10 14:56:26.242 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:56:26.242 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 目标物定性的两个主要依据是什么？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:56:26.242 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:56:26.243 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:56:26.641 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:56:31.633 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 目标物以相对保留时间（或保留时间）和与标准物质质谱图比较进行定性。...
+2025-08-10 14:56:31.633 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 100/100: 质量保证和质量控制中，对有证标准样品和基体加标的要求有何异同？
+2025-08-10 14:56:31.635 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 14:56:31.635 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质量保证和质量控制中，对有证标准样品和基体加标的要求有何异同？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 14:56:31.635 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 14:56:31.635 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-10 14:56:32.027 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 14:56:41.974 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 有证标准样品和基体加标的要求异同如下：
+
+**相同点：**
+1. 频率要求相同：每20个样品或每批次（少于20个样品/批）需进行1次测定。
+
+**不同点：**
+1. **有证标准样品**：测定结果与保证值的相对误差应在±15%以内。
+2. **基体加标样品**：加标回收率应在80%～120%之间。...
+2025-08-10 14:56:41.975 | INFO     | dify_rag_evaluator:evaluate_dify_rag:257 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-10 14:56:41.975 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-10 15:04:26.378 | INFO     | dify_rag_evaluator:evaluate_dify_rag:264 - 检索策略:hybrid_search1评估完成
+2025-08-10 15:04:26.379 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 1/100: 二氯二氟甲烷的检出限是多少？
+2025-08-10 15:04:26.380 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:04:26.380 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:04:26.380 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:04:26.380 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:04:26.380 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:04:26.380 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:04:26.777 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:04:32.127 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 二氯二氟甲烷的检出限是0.4 μg/kg。...
+2025-08-10 15:04:32.128 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 2/100: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-10 15:04:32.128 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:04:32.128 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:04:32.129 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:04:32.129 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:04:32.129 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:04:32.129 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:04:32.538 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:04:40.529 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据HJ605要求：
+- 目标物含量为98.5μg/kg（小于100mg/kg），结果保留至整数位，即应表示为99μg/kg。
+- 目标物含量为102μg/kg（小于100mg/kg），结果保留至整数位，即应表示为102μg/kg。...
+2025-08-10 15:04:40.529 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 3/100: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响
+2025-08-10 15:04:40.529 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:04:40.529 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:04:40.529 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:04:40.529 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:04:40.529 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:04:40.533 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:04:40.975 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: “随机”原则指在采集样品时，必须避免主观因素，确保总体中的每个个体有同等机会被选入样品，以保证样品与总体的同质性。  
+“等量”原则要求相互比较的样品组应由相同数量的个体组成，避免因样本量差异导致代表性不均。  
+
+二者共同作用：  
+- **随机性**减少人为偏差，使样品更客观反映总体特征；  
+- **等量性**确保组间数据可比性，若样本量不等，大样本组的代表性可能掩盖小样本组的结果。  
+违...
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 4/100: 当苯和苯乙烯在空白试验中出现异常高值，可能的原因是什么？
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当苯和苯乙烯在空白试验中出现异常高值，可能的原因是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:04:52.185 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:04:52.480 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:04:57.144 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: Tenax可能变质失效。...
+2025-08-10 15:04:57.144 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 5/100: 空白试验分析结果需满足的条件中，目标物浓度需小于相关环保标准限值的多少？
+2025-08-10 15:04:57.144 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:04:57.145 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白试验分析结果需满足的条件中，目标物浓度需小于相关环保标准限值的多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:04:57.145 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:04:57.145 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:04:57.145 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:04:57.145 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:04:57.553 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 目标物浓度需小于相关环保标准限值的5%。...
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 6/100: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的具体步骤及保存要求是什么？
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的具体步骤及保存要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:02.381 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:02.796 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:05:12.622 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的步骤如下：
+1. 称取1g（精确到0.1mg）金属铅
+2. 用30ml硝酸溶液加热溶解
+3. 冷却后用水定容至1L
+4. 贮存于聚乙烯瓶中，4°C以下冷藏保存，有效期两年
+
+保存要求：
+- 贮存容器：聚乙烯瓶
+- 保存温度：4°C以下冷藏
+- 有效期：两年
+- 也可直接购买市售有证标准溶液...
+2025-08-10 15:05:12.622 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 7/100: 土壤样品风干、粗粉碎、磨样分别使用哪些工具？
+2025-08-10 15:05:12.622 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:12.622 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品风干、粗粉碎、磨样分别使用哪些工具？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:12.622 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:12.622 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:12.622 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:12.625 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:12.947 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:05:20.945 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤样品风干使用白色搪瓷盘及木盘；  
+粗粉碎使用木锤、木滚、木棒、有机玻璃棒、有机玻璃板、硬质木板、无色聚乙烯薄膜；  
+磨样使用玛瑙研磨机（球磨机）或玛瑙研钵、白色瓷研钵。...
+2025-08-10 15:05:20.946 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 8/100: 实验用水的要求是什么？
+2025-08-10 15:05:20.947 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:20.947 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实验用水的要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:20.947 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:20.947 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:20.947 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:20.947 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:21.263 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实验用水为新制备的去离子水。...
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 9/100: 硝酸溶液（1+1）在哪些标准贮备液的配制中被使用？
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 硝酸溶液（1+1）在哪些标准贮备液的配制中被使用？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:25.405 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:25.745 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:05:30.551 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 在金属铜标准贮备液的配制中被使用。...
+2025-08-10 15:05:30.553 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 10/100: 空白试样制备时，加酸量需满足什么条件？
+2025-08-10 15:05:30.553 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:30.553 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白试样制备时，加酸量需满足什么条件？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:30.553 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:30.553 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:30.553 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:30.553 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:30.955 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 空白试样制备时的加酸量要与试样制备时的加酸量保持一致。...
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 11/100: 基体复杂的土壤或沉积物样品测定时，需采用仪器的什么功能？
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 基体复杂的土壤或沉积物样品测定时，需采用仪器的什么功能？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:35.830 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:36.148 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 仪器背景校正功能...
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 12/100: 使用 232.0nm 作为镍的吸收线时，如何减少镍三线光谱的影响？
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 使用 232.0nm 作为镍的吸收线时，如何减少镍三线光谱的影响？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:41.655 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:41.951 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 1 个上下文片段
+2025-08-10 15:05:49.359 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 选择 0.2nm 的光谱通带可减少影响。...
+2025-08-10 15:05:49.359 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 13/100: 土壤加标回收实验中，铜的加标回收率范围和最终值有何要求？（以黄壤样品为例）
+2025-08-10 15:05:49.359 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:05:49.359 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤加标回收实验中，铜的加标回收率范围和最终值有何要求？（以黄壤样品为例）, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:05:49.359 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:05:49.359 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:05:49.359 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:05:49.361 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:05:49.769 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:06:00.220 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 对于含铜为22mg/kg的黄壤样品，加标量为17mg/kg和42mg/kg时的加标回收率范围及最终值要求如下：
+
+1. 加标量17mg/kg：
+   - 回收率范围：88.9%～105%
+   - 最终值：96.9% ± 12.4%
+
+2. 加标量42mg/kg：
+   - 回收率范围：92.7%～98.5%
+   - 最终值：95.5% ± 4.2%...
+2025-08-10 15:06:00.220 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 14/100: 每 20 个样品或每批次（少于 20 个）分析时，需进行哪些质量控制操作？（至少答 4 项）
+2025-08-10 15:06:00.221 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:00.221 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 每 20 个样品或每批次（少于 20 个）分析时，需进行哪些质量控制操作？（至少答 4 项）, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:00.221 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:00.221 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:00.221 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:00.222 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:00.640 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:06:08.673 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 1. 测定1个有证标准样品，相对误差应在±15%以内  
+2. 分析1个基体加标样品，加标回收率应在80%~120%之间  
+3. 分析1个平行样，平行样测定结果相对偏差应≤20%  
+4. 每批样品每个项目分析时做20%平行样品（5个样品以下时不少于1个）...
+2025-08-10 15:06:08.673 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 15/100: 有机溶剂选择需遵循哪些原则？
+2025-08-10 15:06:08.674 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:08.674 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 有机溶剂选择需遵循哪些原则？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:08.674 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:08.674 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:08.674 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:08.674 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:08.990 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 有机溶剂的选择需遵循以下原则：
+1. 根据相似相溶原理，选择与待测物极性相近的溶剂；
+2. 溶剂必须与样品能良好分离，且不影响待测物的纯化与测定；
+3. 溶剂不能与样品发生化学反应；
+4. 毒性低、价格便宜；
+5. 沸点范围以45℃~80℃为宜。...
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 16/100: 制备时，对酸的使用有何要求？
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 制备时，对酸的使用有何要求？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:17.645 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:17.966 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:06:24.210 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 样品消解时应注意各种酸的加入顺序，且空白试样制备时的加酸量要与试样制备时的加酸量保持一致。操作时需佩戴防护器具，避免吸入呼吸道或接触皮肤和衣物。...
+2025-08-10 15:06:24.212 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 17/100: 对于基体复杂的土壤或沉积物样品，测定时需采取哪些措施？
+2025-08-10 15:06:24.212 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:24.213 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 对于基体复杂的土壤或沉积物样品，测定时需采取哪些措施？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:24.213 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:24.213 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:24.213 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:24.213 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:24.545 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 测定时需采用仪器背景校正功能。...
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 18/100: 初步判定样品中含有或不含有目标物时，对平行样或加标样品的替代物相对偏差要求是什么？
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 初步判定样品中含有或不含有目标物时，对平行样或加标样品的替代物相对偏差要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:29.001 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:29.386 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:06:38.335 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 初步判定样品中含有目标物时，平行样品中替代物相对偏差应在25%以内；若初步判定样品中不含有目标物，则须分析该样品的加标样品，该样品及加标样品中替代物相对偏差应在25%以内。...
+2025-08-10 15:06:38.335 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 19/100: 苯乙烯的检出限、测定下限和最小相对响应因子分别是多少？
+2025-08-10 15:06:38.337 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:38.337 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 苯乙烯的检出限、测定下限和最小相对响应因子分别是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:38.337 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:38.337 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:38.337 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:38.339 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:38.728 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:06:47.658 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 苯乙烯的检出限、测定下限和最小相对响应因子如下：
+
+| 序号 | 目标物中文名称 | 目标物英文名称 | 检出限 (μg/kg) | 测定下限 (μg/kg) | 最小相对响应因子 |
+|------|----------------|----------------|----------------|-------------------|---------------------|
+| 47 ...
+2025-08-10 15:06:47.658 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 20/100: 土壤监测项目的分析方法中，ICP-AES、GC-MS 分别代表什么？
+2025-08-10 15:06:47.658 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:47.658 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测项目的分析方法中，ICP-AES、GC-MS 分别代表什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:47.659 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:47.659 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:47.659 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:47.659 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:48.055 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: ICP-AES: 等离子发射光谱法  
+GC-MS: 气相色谱-质谱联用法...
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 21/100: 仪器性能检查中，BFB 溶液的注入方式有哪两种？
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 仪器性能检查中，BFB 溶液的注入方式有哪两种？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:06:53.533 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:06:53.948 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:07:01.321 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 1. 用微量注射器移取1～2μl BFB溶液直接注入气相色谱仪进行分析。
+2. 将1～2μl BFB溶液加入到5ml空白试剂水中，通过吹扫捕集装置注入气相色谱仪进行分析。...
+2025-08-10 15:07:01.321 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 22/100: 空白加标样品的作用是什么？其目标物回收率的合格范围是多少？
+2025-08-10 15:07:01.321 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:01.321 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白加标样品的作用是什么？其目标物回收率的合格范围是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:01.321 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:01.323 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:01.323 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:01.323 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:01.727 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:07:07.251 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 空白加标样品的作用是检查样品是否存在基体效应。其目标物回收率的合格范围应在70%～130%。...
+2025-08-10 15:07:07.251 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 23/100: 四氯乙烯的第一特征离子和第二特征离子分别是什么？
+2025-08-10 15:07:07.252 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:07.252 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 四氯乙烯的第一特征离子和第二特征离子分别是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:07.252 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:07.252 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:07.252 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:07.252 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:08.009 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:07:12.695 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 四氯乙烯的第一特征离子是164，第二特征离子是129、131。...
+2025-08-10 15:07:12.695 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 24/100: 每批样品分析时，实验室空白的要求是什么？
+2025-08-10 15:07:12.695 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:12.695 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 每批样品分析时，实验室空白的要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:12.695 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:12.695 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:12.697 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:12.697 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:13.017 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:07:20.449 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 每批样品分析时，实验室空白的要求包括：
+
+1. 采样前在实验室将一份空白试剂水放入样品瓶中密封，带到采样现场。
+2. 与采样的样品瓶同时开盖和密封，之后随样品运回实验室。
+3. 按与样品相同的操作步骤进行试验，用于检查从样品采集到分析全过程是否受到污染。...
+2025-08-10 15:07:20.450 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 25/100: 土壤分类的六级分类制是什么？前三级和后三级分别以什么为主要单元？
+2025-08-10 15:07:20.450 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:20.450 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤分类的六级分类制是什么？前三级和后三级分别以什么为主要单元？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:20.451 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:20.451 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:20.451 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:20.451 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:21.769 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤分类的六级分类制是：土纲、土类、亚类、土属、土种和变种。前三级（土纲、土类、亚类）为高级分类单元，以土类为主；后三级（土属、土种、变种）为基层分类单元，以土种为主。...
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 26/100: 当样品基体复杂时，除了提高酸度，还需注意什么？
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当样品基体复杂时，除了提高酸度，还需注意什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:29.494 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:29.802 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 当样品基体复杂时，除了提高酸度，还需注意以下两点：
+1. 标准曲线的酸度应与试样酸度保持一致；
+2. 对于基体复杂的土壤或沉积物样品，测定时需采用仪器背景校正功能。...
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 27/100: 目标物定性时，特征离子的定义是什么？
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 目标物定性时，特征离子的定义是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:36.600 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:37.012 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:07:43.627 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 特征离子指目标物质谱图中三个相对丰度最大的离子，若质谱图中没有三个相对丰度最大的离子时，则指相对丰度超过30%的所有离子。...
+2025-08-10 15:07:43.628 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 28/100: 六家实验室对 GSS-9 中铬的 6 次重复测定，相对误差范围是多少？
+2025-08-10 15:07:43.629 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:43.629 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 六家实验室对 GSS-9 中铬的 6 次重复测定，相对误差范围是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:43.629 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:43.629 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:43.629 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:43.629 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:44.053 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:07:49.346 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: -4.5%～0.4%...
+2025-08-10 15:07:49.347 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 29/100: 质量控制图中，上下警告线和控制线的含义是什么？
+2025-08-10 15:07:49.347 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:49.347 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质量控制图中，上下警告线和控制线的含义是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:49.347 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:49.347 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:49.347 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:49.347 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:49.642 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:07:57.780 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量控制图中：
+- 上下警告线（X±2S）：测定值落在此区间内表示分析正常，结果可靠；若落在警告线与控制线之间，虽结果可接受，但存在失控倾向，需予以注意。
+- 上下控制线（X±3S）：测定值超出控制线表示分析失控，结果不可信，需检查原因并重新测定。...
+2025-08-10 15:07:57.780 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 30/100: 校准曲线不合格时，应采取哪些措施？
+2025-08-10 15:07:57.780 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:07:57.783 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 校准曲线不合格时，应采取哪些措施？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:07:57.783 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:07:57.783 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:07:57.783 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:07:57.783 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:07:58.186 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:08:06.238 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 当校准曲线不合格时，应采取以下措施：
+1. 更换捕集管或色谱柱；
+2. 重新绘制校准曲线；
+3. 若校准确认标准溶液的测定值与加入浓度值比值不在80%~120%范围内，需在分析样品前采取校正措施；
+4. 若校正措施无效，应重新绘制校准曲线。...
+2025-08-10 15:08:06.238 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 31/100: 氯甲烷的测定下限是多少？
+2025-08-10 15:08:06.239 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:06.239 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 氯甲烷的测定下限是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:06.239 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:06.239 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:06.239 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:06.239 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:06.632 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:08:11.338 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 4.0 μg/kg...
+2025-08-10 15:08:11.338 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 32/100: 河流沉积物样品中铜的加标回收率（加标量 17mg/kg）范围和最终值是多少？
+2025-08-10 15:08:11.339 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:11.339 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 河流沉积物样品中铜的加标回收率（加标量 17mg/kg）范围和最终值是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:11.339 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:11.339 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:11.339 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:11.339 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:11.757 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 加标回收率范围：87.4%～100%  
+加标回收率最终值：94.3% ± 9.0%...
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 33/100: BFB 溶液检查中，质量 174 的离子丰度标准是什么？
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: BFB 溶液检查中，质量 174 的离子丰度标准是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:17.606 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:17.996 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量174的离子丰度标准应大于质量95的50%。...
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 34/100: 每批次样品分析结束后，标准系列中间浓度点的核查要求是什么？
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 每批次样品分析结束后，标准系列中间浓度点的核查要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:22.904 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:23.301 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 中间浓度测定值与标准值的相对误差应在±10%以内。...
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 35/100: 1,3 - 二氯丙烷的出峰顺序对应的序号是多少？
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 1,3 - 二氯丙烷的出峰顺序对应的序号是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:27.702 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:28.138 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据表B.1，1,3-二氯丙烷未列出，无法提供其出峰顺序对应的序号。...
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 36/100: 实验室间相对标准偏差对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实验室间相对标准偏差对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:33.830 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:34.585 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的知识库内容，未提及5.0μg/kg和100μg/kg统一样品的实验室间相对标准偏差数据，因此无法回答该问题。...
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 37/100: 加标回收率最终值的表示方式是什么？
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 加标回收率最终值的表示方式是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:40.584 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:40.893 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 加标回收率最终值的表示方式为：平均值 ± 标准偏差（例如：96.9% ± 11.4%）。...
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 38/100: BFB 溶液检查中，质量 176 的离子丰度标准是什么？
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: BFB 溶液检查中，质量 176 的离子丰度标准是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:46.613 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:47.070 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:08:55.060 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量176的离子丰度标准为质量174的93%～101%。...
+2025-08-10 15:08:55.060 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 39/100: 当空白试验未满足要求时，重新分析样品的前提是什么？
+2025-08-10 15:08:55.060 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:08:55.060 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当空白试验未满足要求时，重新分析样品的前提是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:08:55.060 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:08:55.062 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:08:55.062 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:08:55.062 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:08:55.464 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 采取措施排除污染...
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 40/100: GSS-12 中锌的相对误差最终值是多少？
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: GSS-12 中锌的相对误差最终值是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:00.650 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:01.058 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: GSS-12中锌的相对误差最终值为-1.3%±7.0%。...
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 41/100: 校准曲线中，相对响应因子（RRF）的 RSD 合格上限是多少？
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 校准曲线中，相对响应因子（RRF）的 RSD 合格上限是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:06.669 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:07.078 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 20%...
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 42/100: 运输空白和全程序空白的采集频率是多少？
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 运输空白和全程序空白的采集频率是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:11.530 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:11.828 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 1 个上下文片段
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的知识库内容，无法确定运输空白和全程序空白的采集频率。...
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 43/100: 特征离子的相对丰度变化允许范围是多少？
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 特征离子的相对丰度变化允许范围是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:17.833 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:18.235 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:22.855 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实际样品中目标物质谱图中特征离子的相对丰度变化应在校准确认标准溶液的±30%之内。...
+2025-08-10 15:09:22.855 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 44/100: 六家实验室对 GSD-5a 中锌的 6 次重复测定，相对误差范围是多少？
+2025-08-10 15:09:22.857 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:22.857 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 六家实验室对 GSD-5a 中锌的 6 次重复测定，相对误差范围是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:22.857 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:22.857 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:22.857 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:22.857 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:23.305 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:29.141 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 六家实验室对GSD-5a中锌的6次重复测定的相对误差范围是-0.8%～1.1%。...
+2025-08-10 15:09:29.141 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 45/100: 仪器性能检查中，若软件不能自动判定 BFB 离子丰度是否符合标准，应如何处理？
+2025-08-10 15:09:29.143 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:29.143 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 仪器性能检查中，若软件不能自动判定 BFB 离子丰度是否符合标准，应如何处理？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:29.143 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:29.143 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:29.143 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:29.143 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:29.936 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:09:37.356 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若仪器软件不能自动判定BFB关键离子丰度是否符合标准，可通过取峰顶扫描点及其前后两个扫描点离子丰度的平均值扣除背景值后获得关键离子丰度，并应符合表1标准。背景值的选取可以是BFB出峰前20次扫描点中的任意一点，该背景值应是柱流失或仪器背景离子产生的。...
+2025-08-10 15:09:37.356 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 46/100: 基体加标样品的加标回收率合格范围是多少？
+2025-08-10 15:09:37.357 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:37.357 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 基体加标样品的加标回收率合格范围是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:37.358 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:37.358 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:37.358 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:37.358 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:37.763 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 基体加标样品的加标回收率合格范围是80%～120%。...
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 47/100: 重复性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 重复性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:42.101 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:42.517 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的数据，重复性限r的范围如下：
+
+- 对于5.0mg/kg的统一样品，重复性限r为4mg/kg、5mg/kg、6mg/kg、10mg/kg、11mg/kg、15mg/kg、16mg/kg等。
+- 对于100mg/kg的统一样品，重复性限r为48mg/kg、49mg/kg等。
+
+注意：提供的上下文中没有直接提到5.0μg/kg和100μg/kg的统一样品，因此上述回答是基于mg/kg单位的统...
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 48/100: 空白试验中，若目标物浓度同时满足三个条件，应取哪个作为判定标准？
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 空白试验中，若目标物浓度同时满足三个条件，应取哪个作为判定标准？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:52.929 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:53.326 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 应取三个条件中的最大者作为判定标准。...
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 49/100: 四极杆质谱与离子阱质谱在 BFB 离子丰度标准上有何区别？
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 四极杆质谱与离子阱质谱在 BFB 离子丰度标准上有何区别？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:09:58.702 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:09:59.099 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 四极杆质谱的BFB关键离子丰度需符合表1标准（如质量50离子为质量95的8%～40%等），而离子阱质谱的标准需参照仪器制造商的说明执行。...
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 50/100: 有证标准样品的测定结果与保证值的相对误差允许范围是多少？
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 有证标准样品的测定结果与保证值的相对误差允许范围是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:06.977 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:07.304 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:10:11.613 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: ±15%以内...
+2025-08-10 15:10:11.613 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 51/100: 再现性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？
+2025-08-10 15:10:11.613 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:11.615 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 再现性限对于 5.0μg/kg 和 100μg/kg 的统一样品，范围分别是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:11.615 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:11.615 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:11.615 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:11.615 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:12.043 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的数据，文本中没有提到 5.0μg/kg 和 100μg/kg 统一样品的再现性限范围。因此无法回答这个问题。...
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 52/100: 当样品含水率大于 10% 时，提取液体积Vc​的计算依据是什么？
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当样品含水率大于 10% 时，提取液体积Vc​的计算依据是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:18.615 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:19.028 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 当样品含水率大于10%时，提取液体积Vc应为甲醇与样品中水的体积之和。...
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 53/100: 标准曲线的相关系数合格下限是多少？
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 标准曲线的相关系数合格下限是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:24.709 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:25.013 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:10:29.617 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 标准曲线的相关系数应 ≥ 0.999。...
+2025-08-10 15:10:29.618 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 54/100: 全程序空白的作用是什么？
+2025-08-10 15:10:29.618 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:29.618 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 全程序空白的作用是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:29.618 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:29.618 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:29.618 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:29.618 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:30.271 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:10:36.287 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 全程序空白用于检查从样品采集到分析全过程是否受到污染。...
+2025-08-10 15:10:36.287 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 55/100: GSS-12 中铬的相对误差最终值是多少？
+2025-08-10 15:10:36.287 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:36.288 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: GSS-12 中铬的相对误差最终值是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:36.288 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:36.288 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:36.288 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:36.288 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:36.696 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: GSS-12中铬的相对误差最终值为0.4% ± 4.0%。...
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 56/100: 目标物定量时，若采用非线性校准曲线，试料中目标物质量浓度如何计算？
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 目标物定量时，若采用非线性校准曲线，试料中目标物质量浓度如何计算？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:44.716 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:45.131 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:10:50.239 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 试料中目标物质量浓度通过相应的非线性校准曲线计算。...
+2025-08-10 15:10:50.239 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 57/100: 当替代物回收率不合格且重复后仍不合格时，说明存在什么问题？
+2025-08-10 15:10:50.239 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:50.239 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当替代物回收率不合格且重复后仍不合格时，说明存在什么问题？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:50.242 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:50.242 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:50.242 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:50.243 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:50.646 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 样品存在基体效应。...
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 58/100: 标准系列零浓度点的核查要求是什么？
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 标准系列零浓度点的核查要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:10:54.689 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:10:55.129 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 标准系列零浓度点测定结果应低于方法检出限。...
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 59/100: 质谱仪离子源污染时，可能会导致什么结果？
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质谱仪离子源污染时，可能会导致什么结果？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:00.293 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:00.579 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 0 个上下文片段
+2025-08-10 15:11:08.730 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质谱仪离子源污染时，可能会导致以下结果：
+1. 质谱图质量下降，影响数据采集的准确性。
+2. 自动调谐功能异常，影响仪器的稳定性。
+3. 定量分析结果出现偏差，影响检测数据的可靠性。
+4. 谱库检索匹配度降低，影响物质鉴定的准确性。...
+2025-08-10 15:11:08.730 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 60/100: 使用气相色谱 - 质谱联用仪分析土壤中目标物时，仪器性能检查的流程是什么？
+2025-08-10 15:11:08.730 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:08.730 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 使用气相色谱 - 质谱联用仪分析土壤中目标物时，仪器性能检查的流程是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:08.730 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:08.732 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:08.732 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:08.732 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:09.046 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据上下文提供的信息，未提及气相色谱-质谱联用仪分析土壤目标物时仪器性能检查的具体流程。建议参考仪器操作手册或相关标准方法。...
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 61/100: 土壤监测的常规项目包括哪些？
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测的常规项目包括哪些？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:14.573 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:14.871 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:21.261 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 常规项目包括：
+- 基本项目：pH、阳离子交换量（每3年一次）
+- 重点项目：镉、铬、汞、砷、铅、铜、锌、镍、六六六、滴滴涕（农田在夏收或秋收后采样）...
+2025-08-10 15:11:21.261 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 62/100: 哪种布点方法适用于监测区域内土壤污染物含量变化较大的情况？
+2025-08-10 15:11:21.261 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:21.262 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 哪种布点方法适用于监测区域内土壤污染物含量变化较大的情况？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:21.262 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:21.262 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:21.262 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:21.262 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:21.596 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 系统随机布点。...
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 63/100: 区域土壤环境背景监测中，采样点应避开铁路、公路至少多少距离？
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 区域土壤环境背景监测中，采样点应避开铁路、公路至少多少距离？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:26.483 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:27.134 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:31.603 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 300m以上...
+2025-08-10 15:11:31.603 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 64/100: 农田土壤混合样的分点数一般在多少个之间？
+2025-08-10 15:11:31.603 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:31.605 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 农田土壤混合样的分点数一般在多少个之间？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:31.605 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:31.605 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:31.605 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:31.605 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:31.919 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:35.924 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 5～20个。...
+2025-08-10 15:11:35.925 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 65/100: 土壤采样记录应标注什么？
+2025-08-10 15:11:35.925 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:35.925 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤采样记录应标注什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:35.926 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:35.926 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:35.926 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:35.926 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:36.246 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:43.676 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤采样记录应标注以下内容：
+
+采用地点  
+东经  
+北纬  
+样品编号  
+采样日期  
+样品类别  
+采样人员  
+采样层次  
+采样深度(cm)  
+样品描述  
+土壤颜色  
+植物根系  
+土壤质地  
+砂砾含量  
+土壤湿度  
+其它异物  
+采样点示意图  
+自下而上植被描述...
+2025-08-10 15:11:43.676 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 66/100: 系统随机布点的特点是？
+2025-08-10 15:11:43.676 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:43.676 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 系统随机布点的特点是？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:43.676 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:43.679 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:43.679 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:43.679 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:43.995 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:11:51.117 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 系统随机布点的特点是将监测区域分成面积相等的几部分（网格划分），每网格内布设一个采样点。如果区域内土壤污染物含量变化较大，系统随机布点比简单随机布点所采样品的代表性要好。...
+2025-08-10 15:11:51.117 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 67/100: 计算网格间距 L 时，若采样单元面积 A 的单位是 km²，则 L 的单位是
+2025-08-10 15:11:51.119 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:51.119 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 计算网格间距 L 时，若采样单元面积 A 的单位是 km²，则 L 的单位是, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:51.119 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:51.119 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:51.119 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:51.119 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:51.552 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: km...
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 68/100: 土壤环境监测中，常规项目的监测频次原则上不低于
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤环境监测中，常规项目的监测频次原则上不低于, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:11:56.507 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:11:56.831 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:12:01.159 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 每3年一次...
+2025-08-10 15:12:01.159 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 69/100: 土壤环境监测类型主要包括
+2025-08-10 15:12:01.159 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:12:01.160 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤环境监测类型主要包括, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:12:01.160 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:12:01.160 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:12:01.160 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:12:01.160 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:12:01.476 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:12:06.981 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 区域土壤环境背景监测、农田土壤环境质量监测、建设项目土壤环境评价监测和土壤污染事故监测。...
+2025-08-10 15:12:06.981 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 70/100: 土壤采样前需要收集哪些主要资料？
+2025-08-10 15:12:06.981 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:12:06.982 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤采样前需要收集哪些主要资料？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:12:06.982 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:12:06.982 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:12:06.982 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:12:06.982 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:12:07.693 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤采样前需要收集的主要资料包括：
+1. 监测区域的交通图、土壤图、地质图、大比例尺地形图；
+2. 监测区域土类、成土母质等土壤信息资料；
+3. 工程建设或生产过程对土壤造成影响的环境研究资料；
+4. 造成土壤污染事故的主要污染物的毒性、稳定性以及如何消除等资料；
+5. 土壤历史资料和相应的法律（法规）；
+6. 监测区域工农业生产及排污、污灌、化肥农药施用情况资料；
+7. 监测区域气候资料（温度、...
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 71/100: 土壤剖面采样的注意事项有哪些？
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤剖面采样的注意事项有哪些？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:12:19.245 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:12:19.569 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤剖面采样的注意事项包括：
+
+1. 采样深度一般为1.2m，规格为长1.5m，宽0.8m。
+2. 挖掘土壤剖面时，观察面应向阳，表土和底土分两侧放置。
+3. 每层样品采集1kg左右，装入样品袋。潮湿样品可内衬塑料袋（供无机化合物测定）或置于玻璃瓶内（供有机化合物测定）。
+4. 专人填写样品标签和采样记录，标签一式两份，一份放入袋中，一份系在袋口。标签上需标注采样时间、地点、样品编号、监测项目、采...
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 72/100: 农田土壤混合样的采集目的和分点数要求是什么？
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 农田土壤混合样的采集目的和分点数要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:12:34.445 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:12:35.110 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:12:40.552 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 农田土壤混合样的采集目的是为了保证样品的代表性并减低监测费用。组成混合样的分点数要在5～20个。...
+2025-08-10 15:12:40.553 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 73/100: 土壤采样器具中的安全防护用品包括哪些？
+2025-08-10 15:12:40.553 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:12:40.553 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤采样器具中的安全防护用品包括哪些？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:12:40.553 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:12:40.553 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:12:40.553 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:12:40.553 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:12:40.886 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:12:45.300 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 工作服、工作鞋、安全帽、药品箱等。...
+2025-08-10 15:12:45.300 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 74/100: 当使用四极杆质谱时，若 BFB 关键离子丰度不符合标准，应采取什么措施？
+2025-08-10 15:12:45.300 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:12:45.300 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 当使用四极杆质谱时，若 BFB 关键离子丰度不符合标准，应采取什么措施？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:12:45.300 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:12:45.300 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:12:45.302 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:12:45.302 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:12:45.702 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若 BFB 关键离子丰度不符合表1标准，需对质谱仪的参数进行调整或者考虑清洗离子源。...
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 75/100: 某实验室分析土壤中苯系物时，空白样品中苯浓度为方法检出限的 1.2 倍。该结果是否符合空白控制要求？应采取哪些措施？
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 某实验室分析土壤中苯系物时，空白样品中苯浓度为方法检出限的 1.2 倍。该结果是否符合空白控制要求？应采取哪些措施？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:12:51.187 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:12:51.627 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据空白试验的控制要求，空白样品中目标物浓度应小于方法检出限。该实验室空白样品中苯浓度为方法检出限的1.2倍，不符合控制要求。
+
+应采取的措施：
+1. 排除污染源并重新分析同批样品；
+2. 若发现苯异常高值，需检查Tenax捕集管是否变质失效，必要时更换捕集管；
+3. 若怀疑样品受到污染，需分析运输空白和全程序空白样品，确认其测定结果是否符合控制指标（小于方法检出限）；
+4. 重新采集样品进行分析...
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 76/100: 实际样品中目标物质谱图特征离子的相对丰度变化应在校准确认标准溶液的多少范围内？
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实际样品中目标物质谱图特征离子的相对丰度变化应在校准确认标准溶液的多少范围内？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:01.831 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:02.234 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:07.854 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实际样品中目标物质谱图特征离子的相对丰度变化应在校准确认标准溶液的±30%之内。...
+2025-08-10 15:13:07.854 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 77/100: 平行样测定结果的相对偏差应满足什么要求？
+2025-08-10 15:13:07.854 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:07.854 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 平行样测定结果的相对偏差应满足什么要求？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:07.856 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:07.856 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:07.856 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:07.856 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:08.166 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 平行样测定结果相对偏差应 ≤20%。...
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 78/100: 简述土壤样品风干至磨样的完整操作步骤。
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 简述土壤样品风干至磨样的完整操作步骤。, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:13.105 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:13.433 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:26.863 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 1. **风干**：
+   - 将土样放置于风干盘中，摊成2～3cm的薄层。
+   - 适时压碎、翻动，拣出碎石、砂砾、植物残体。
+
+2. **粗磨**：
+   - 将风干的样品倒在有机玻璃板上，用木锤敲打，再用木滚、木棒或有机玻璃棒压碎。
+   - 拣出杂质，混匀后采用四分法取压碎样。
+   - 过孔径0.25mm（20目）尼龙筛。
+   - 过筛后的样品置于无色聚乙烯薄膜上，充分搅拌混匀。
+ ...
+2025-08-10 15:13:26.864 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 79/100: 使用吹扫捕集测定土壤中挥发性有机物时，样品前处理的关键步骤是什么？
+2025-08-10 15:13:26.864 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:26.865 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 使用吹扫捕集测定土壤中挥发性有机物时，样品前处理的关键步骤是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:26.865 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:26.865 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:26.865 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:26.865 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:27.195 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:31.137 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤样品预处理方法...
+2025-08-10 15:13:31.137 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 80/100: 土壤样品中重金属（如铅、镉）的消解操作步骤是什么？
+2025-08-10 15:13:31.137 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:31.137 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品中重金属（如铅、镉）的消解操作步骤是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:31.137 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:31.137 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:31.137 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:31.139 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:31.548 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:39.376 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据提供的知识库内容，未提及具体的消解操作步骤（如铅、镉的酸消解流程），仅说明需通过酸消解预处理后测定。建议补充具体消解方法或参考相关标准。...
+2025-08-10 15:13:39.377 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 81/100: 土壤背景值与土壤筛选值的区别？
+2025-08-10 15:13:39.377 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:39.377 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤背景值与土壤筛选值的区别？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:39.377 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:39.377 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:39.377 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:39.378 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:40.030 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:48.229 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤背景值是指未受人为污染影响的自然状态下土壤中元素的含量水平，主要用于反映土壤的天然化学组成；而土壤筛选值（或标准值）则是基于环境风险评估制定的管理限值，用于判断土壤是否受到污染及是否需要采取修复措施。两者的核心区别在于：背景值表征自然本底状况，筛选值则是人为设定的污染管控阈值。...
+2025-08-10 15:13:48.229 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 82/100: 土壤含水率测定的操作步骤是什么？
+2025-08-10 15:13:48.232 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:48.232 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤含水率测定的操作步骤是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:48.232 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:48.232 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:48.232 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:48.232 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:48.556 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 沉积物样品含水率按照GB17378.5测定；土壤样品干物质含量按照HJ613测定。...
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 83/100: 替代物、内标的作用分别是什么？
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 替代物、内标的作用分别是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:13:54.042 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:13:55.344 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 1 个上下文片段
+2025-08-10 15:14:01.788 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 替代物的作用：在样品提取或其他前处理之前加入，通过回收率评价样品基体、样品处理过程对分析结果的影响。
+
+内标的作用：在样品分析之前加入，用于目标物的定量分析。...
+2025-08-10 15:14:01.788 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 84/100: 方法检出限与测定下限的区别是什么？
+2025-08-10 15:14:01.788 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:14:01.788 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 方法检出限与测定下限的区别是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:14:01.788 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:14:01.790 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:14:01.790 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:14:01.790 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:14:02.092 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 2 个上下文片段
+2025-08-10 15:14:13.558 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 方法检出限是指能够可靠检测到目标物的最低浓度，而测定下限是指能够准确定量目标物的最低浓度。通常测定下限高于检出限。例如：
+- 铜的检出限为1mg/kg，测定下限为4mg/kg
+- 铅的检出限为10mg/kg，测定下限为40mg/kg
+- 1,2-二溴乙烷的检出限为1.1μg/kg，测定下限为4.4μg/kg
+- 萘的检出限为0.4μg/kg，测定下限为1.6μg/kg...
+2025-08-10 15:14:13.560 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 85/100: 实验室内相对标准偏差（RSD）与实验室间相对标准偏差的区别？
+2025-08-10 15:14:13.560 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:14:13.560 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 实验室内相对标准偏差（RSD）与实验室间相对标准偏差的区别？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:14:13.560 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:14:13.560 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:14:13.560 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:14:13.560 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:14:13.981 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 实验室内相对标准偏差（RSD）反映同一实验室内部多次测定结果的离散程度，衡量实验室内重复性；实验室间相对标准偏差反映不同实验室对同一样品测定结果的离散程度，衡量实验室间再现性。例如：实验室内RSD为1.0%～38.6%，实验室间RSD为0.2%～57.4%。...
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 86/100: 在土壤监测中，混合样的四种采集方法（对角线法、梅花点法、棋盘式法、蛇形法）的分点数量和适用场景？
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 在土壤监测中，混合样的四种采集方法（对角线法、梅花点法、棋盘式法、蛇形法）的分点数量和适用场景？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:14:22.563 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:14:22.984 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:14:35.909 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 1. 蛇形法：  
+   - 分点数量：15个左右  
+   - 适用场景：面积较大、土壤不够均匀且地势不平坦的地块，多用于农业污染型土壤。  
+
+2. 梅花点法：  
+   - 分点数量：5个左右  
+   - 适用场景：面积较小，地势平坦，土壤组成和受污染程度相对比较均匀的地块。  
+
+3. 棋盘式法：  
+   - 分点数量：10个左右（受污泥、垃圾等固体废物污染的土壤需20个以上）  
+ ...
+2025-08-10 15:14:35.910 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 87/100: 采样误差、制样误差和分析误差的主要来源及控制措施。
+2025-08-10 15:14:35.910 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:14:35.911 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 采样误差、制样误差和分析误差的主要来源及控制措施。, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:14:35.911 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:14:35.911 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:14:35.911 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:14:35.911 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:14:36.258 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:14:50.673 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 采样误差、制样误差和分析误差的主要来源及控制措施如下：
+
+1. 采样误差：
+   - 来源：采样过程中样品的不均匀性、采样点选择不当、采样工具污染等。
+   - 控制措施：采用标准采样方法，确保采样点代表性，避免采样工具污染，增加采样重复次数。
+
+2. 制样误差 (PE)：
+   - 来源：研磨、筛分和贮存过程中的交叉污染、待测组分挥发损失、组分价态变化、贮存容器吸附等。
+   - 控制措施：使用...
+2025-08-10 15:14:50.673 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 88/100: 为何要求替代物加标回收率需在 70%~130%？
+2025-08-10 15:14:50.673 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:14:50.673 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 为何要求替代物加标回收率需在 70%~130%？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:14:50.673 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:14:50.673 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:14:50.673 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:14:50.675 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:14:51.084 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:14:58.984 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 替代物加标回收率要求在70%~130%是为了确保分析方法的准确性和可靠性。这一范围能够有效监控样品处理和分析过程中的基体效应、操作误差以及仪器性能，从而保证测定结果的准确性。如果回收率超出此范围，可能表明样品存在基体干扰或操作问题，需要重新分析或采取纠正措施。...
+2025-08-10 15:14:58.985 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 89/100: 中间浓度点核查的相对误差要求是什么？
+2025-08-10 15:14:58.985 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:14:58.986 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 中间浓度点核查的相对误差要求是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:14:58.986 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:14:58.986 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:14:58.986 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:14:58.986 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:14:59.302 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 中间浓度测定值与标准值的相对误差应在±10%以内。...
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 90/100: 若某批次样品的运输空白中目标物浓度超过方法检出限，应如何处理？
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 若某批次样品的运输空白中目标物浓度超过方法检出限，应如何处理？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:15:04.346 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:15:05.068 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若运输空白中目标物浓度超过方法检出限，应查找原因，采取措施排除污染后重新采集样品分析。...
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 91/100: 质量控制图的绘制依据是什么？
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质量控制图的绘制依据是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:15:09.628 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:15:09.934 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 1 个上下文片段
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 质量控制图的绘制依据是：以质控样的保证值X作为中心线，X±2S作为上下警告线，X±3S作为上下控制线，在95%的置信水平下进行绘制。...
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 92/100: 土壤样品分析记录的填写和修改有哪些规范要求？
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤样品分析记录的填写和修改有哪些规范要求？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:15:16.401 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:15:16.718 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:15:30.069 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据《土壤环境监测技术规范》，土壤样品分析记录的填写和修改需遵循以下规范要求：  
+1. **记录完整性**：确保所有监测步骤（如采样、预处理、分析等）的数据完整记录，不得遗漏关键信息。  
+2. **修改规范**：如需修改记录，应划改并标注修改人、日期及原因，原始数据需保留不可涂改。  
+3. **单位标准化**：使用规范单位符号（如“ml”“μl”），数值与单位间留空格（如“10.0 ml”）...
+2025-08-10 15:15:30.069 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 93/100: 在土壤样品消解过程中，有哪些注意事项？
+2025-08-10 15:15:30.069 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:15:30.069 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 在土壤样品消解过程中，有哪些注意事项？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:15:30.069 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:15:30.069 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:15:30.072 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:15:30.072 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:15:30.372 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 在土壤样品消解过程中，需要注意以下事项：
+1. 各种酸的加入顺序要正确。
+2. 根据消解情况，可适当补加硝酸、高氯酸等酸。
+3. 可调整消解温度和时间等条件。...
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 94/100: 土壤监测中，第一方法、第二方法、第三方法的定义及适用场景有何不同？
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测中，第一方法、第二方法、第三方法的定义及适用场景有何不同？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:15:37.781 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:15:38.106 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 土壤监测中的三种方法定义及适用场景如下：
+
+1. 第一方法（标准方法/仲裁方法）：采用《土壤环境质量标准》中指定的分析方法（表10-1），具有法定效力，适用于争议仲裁或标准符合性判定等正式场合。
+
+2. 第二方法：由权威部门（如国家生态环境主管部门）正式规定或推荐的分析方法，适用于常规监测或特定管理要求场景。
+
+3. 第三方法：允许各地根据实际情况选择等效方法，但需通过标准样品验证或比对实验，确保...
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 95/100: 土壤监测中，每批样品分析前为何需进行仪器性能检查？
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测中，每批样品分析前为何需进行仪器性能检查？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:15:50.265 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:15:50.603 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 每批样品分析前进行仪器性能检查是为了确保分析结果的准确性和可靠性。...
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 96/100: 基体加标与空白加标的主要区别是什么？
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 基体加标与空白加标的主要区别是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:15:55.276 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:15:55.580 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 0 个上下文片段
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 基体加标是在样品中添加已知量的待测目标物，用于评价目标物的回收率和样品的基体效应；空白加标是在空白试样中添加已知量的待测目标物，用于验证分析过程中是否存在污染或干扰。...
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 97/100: 消解过程中，若样品基体复杂，应如何调整实验条件以保证测定准确性？
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 消解过程中，若样品基体复杂，应如何调整实验条件以保证测定准确性？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:16:02.602 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:16:02.933 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:16:09.325 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 若样品基体复杂，可适当提高试样酸度，并确保标准曲线的酸度与试样酸度保持一致。同时可调整消解温度和时间等条件，必要时补加硝酸、高氯酸等酸。...
+2025-08-10 15:16:09.325 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 98/100: 土壤监测中，仪器性能检查内容包括哪些？
+2025-08-10 15:16:09.326 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:16:09.326 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 土壤监测中，仪器性能检查内容包括哪些？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:16:09.326 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:16:09.326 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:16:09.326 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:16:09.326 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:16:09.660 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:16:16.242 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 根据《土壤环境监测技术规范》，土壤分析测定章节未明确列出仪器性能检查的具体内容。建议查阅该规范第10章"土壤分析测定"部分获取详细信息。...
+2025-08-10 15:16:16.243 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 99/100: 目标物定性的两个主要依据是什么？
+2025-08-10 15:16:16.243 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:16:16.243 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 目标物定性的两个主要依据是什么？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:16:16.243 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:16:16.243 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:16:16.243 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:16:16.243 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:16:16.635 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 目标物以相对保留时间（或保留时间）和与标准物质质谱图比较进行定性。...
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:create_evaluation_dataset:166 - 处理QA对 100/100: 质量保证和质量控制中，对有证标准样品和基体加标的要求有何异同？
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:retrieve:95 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:retrieve:96 - 检索参数 - 查询问题: 质量保证和质量控制中，对有证标准样品和基体加标的要求有何异同？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-10 15:16:21.990 | INFO     | dify_rag_evaluator:retrieve:126 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 15:16:22.396 | INFO     | dify_rag_evaluator:create_evaluation_dataset:170 - 检索到 3 个上下文片段
+2025-08-10 15:16:32.016 | INFO     | dify_rag_evaluator:create_evaluation_dataset:181 - RAG系统生成的答案: 有证标准样品和基体加标的要求异同如下：
+
+**相同点：**
+1. 频率要求相同：每20个样品或每批次（少于20个样品/批）需进行1次测定。
+
+**不同点：**
+1. **有证标准样品**：测定结果与保证值的相对误差应在±15%以内。
+2. **基体加标样品**：加标回收率应在80%～120%之间。...
+2025-08-10 15:16:32.016 | INFO     | dify_rag_evaluator:evaluate_dify_rag:257 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-10 15:16:32.016 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-10 15:24:02.886 | INFO     | dify_rag_evaluator:evaluate_dify_rag:264 - 检索策略:hybrid_search2评估完成
+2025-08-10 15:24:03.114 | INFO     | dify_rag_evaluator:evaluate_dify_rag:275 - 评估结果已保存到evaluation_results1.xlsx

@@ -1,0 +1,25 @@
+2025-08-10 10:36:33.816 | INFO     | __main__:evaluate_dify_rag:251 - 开始评估Dify知识库召回和RAG系统...
+2025-08-10 10:36:33.946 | INFO     | __main__:evaluate_dify_rag:260 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-10 10:36:33.946 | INFO     | __main__:evaluate_dify_rag:261 - API Base URL: https://api.deepseek.com/v1
+2025-08-10 10:36:35.105 | INFO     | __main__:evaluate_dify_rag:279 - 加载了 1 条测试数据
+2025-08-10 10:36:35.569 | INFO     | __main__:create_evaluation_dataset:179 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-10 10:36:35.586 | INFO     | __main__:retrieve:96 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 10:36:35.586 | INFO     | __main__:retrieve:97 - 检索参数 - 查询词: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 10:36:35.586 | INFO     | __main__:retrieve:124 - 检索配置 - top_k: 3
+2025-08-10 10:36:35.586 | INFO     | __main__:retrieve:125 - 检索配置 - 分数阈值启用: False
+2025-08-10 10:36:46.858 | INFO     | __main__:create_evaluation_dataset:198 - 检索到 2 个上下文片段
+2025-08-10 10:36:46.858 | INFO     | __main__:create_evaluation_dataset:199 - RAG系统生成的答案: 二氯二氟甲烷的检出限为0.4 µg/kg。...
+2025-08-10 10:36:46.858 | INFO     | __main__:evaluate_dify_rag:298 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-10 10:37:02.339 | INFO     | __main__:evaluate_dify_rag:306 - 检索策略:hybrid_search1评估完成
+2025-08-10 10:37:02.343 | INFO     | __main__:create_evaluation_dataset:179 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-10 10:37:02.343 | INFO     | __main__:retrieve:96 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 10:37:02.343 | INFO     | __main__:retrieve:97 - 检索参数 - 查询词: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-10 10:37:02.343 | INFO     | __main__:retrieve:123 - 检索配置 rebank model : bge-reranker-v2-m3
+2025-08-10 10:37:02.343 | INFO     | __main__:retrieve:124 - 检索配置 - top_k: 3
+2025-08-10 10:37:02.345 | INFO     | __main__:retrieve:125 - 检索配置 - 分数阈值启用: True
+2025-08-10 10:37:02.345 | INFO     | __main__:retrieve:127 - 构建的检索配置 - 分数阈值: 0.6
+2025-08-10 10:37:13.017 | INFO     | __main__:create_evaluation_dataset:198 - 检索到 2 个上下文片段
+2025-08-10 10:37:13.018 | INFO     | __main__:create_evaluation_dataset:199 - RAG系统生成的答案: 二氯二氟甲烷的检出限为0.4 µg/kg。...
+2025-08-10 10:37:13.018 | INFO     | __main__:evaluate_dify_rag:298 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-10 10:37:27.565 | INFO     | __main__:evaluate_dify_rag:306 - 检索策略:hybrid_search2评估完成
+2025-08-10 10:37:27.576 | INFO     | __main__:evaluate_dify_rag:311 - 评估结果已保存到evaluation_results1.xlsx

@@ -1,0 +1,61 @@
+2025-08-08 18:07:57.430 | INFO     | __main__:evaluate_dify_retrieval:186 - 开始评估Dify知识库召回内容...
+2025-08-08 18:07:57.552 | INFO     | __main__:evaluate_dify_retrieval:190 - 加载了 100 条测试数据
+2025-08-08 18:07:57.554 | INFO     | __main__:create_ragas_dataset:113 - 开始创建RAGAS评估数据集...
+2025-08-08 18:07:57.554 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 1/100: 二氯二氟甲烷的检出限是多少？
+2025-08-08 18:07:57.555 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:07:57.555 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:07:57.555 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:07:59.535 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:07:59.535 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:07:59.535 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 2/100: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-08 18:07:59.535 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:07:59.535 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:07:59.535 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:00.256 | INFO     | __main__:create_ragas_dataset:136 - 检索到 2 个上下文片段
+2025-08-08 18:08:00.256 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:00.256 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 3/100: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响
+2025-08-08 18:08:00.256 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:00.256 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:00.256 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:00.822 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:08:00.822 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:00.823 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 4/100: 当苯和苯乙烯在空白试验中出现异常高值，可能的原因是什么？
+2025-08-08 18:08:00.823 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:00.823 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:00.823 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:01.407 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:08:01.407 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:01.407 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 5/100: 空白试验分析结果需满足的条件中，目标物浓度需小于相关环保标准限值的多少？
+2025-08-08 18:08:01.408 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:01.408 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:01.409 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:03.020 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:08:03.020 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:03.020 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 6/100: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的具体步骤及保存要求是什么？
+2025-08-08 18:08:03.020 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:03.020 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:03.020 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:03.569 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:08:03.569 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:03.569 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 7/100: 土壤样品风干、粗粉碎、磨样分别使用哪些工具？
+2025-08-08 18:08:03.571 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:03.571 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:03.571 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:04.158 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:08:04.158 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:04.158 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 8/100: 实验用水的要求是什么？
+2025-08-08 18:08:04.158 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:04.158 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:04.158 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:04.733 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:08:04.733 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:04.733 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 9/100: 硝酸溶液（1+1）在哪些标准贮备液的配制中被使用？
+2025-08-08 18:08:04.735 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:04.735 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:04.735 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 18:08:05.350 | INFO     | __main__:create_ragas_dataset:136 - 检索到 1 个上下文片段
+2025-08-08 18:08:05.350 | INFO     | __main__:create_ragas_dataset:137 - 无答案
+2025-08-08 18:08:05.350 | INFO     | __main__:create_ragas_dataset:119 - 处理问题 10/100: 空白试样制备时，加酸量需满足什么条件？
+2025-08-08 18:08:05.350 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 18:08:05.350 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 18:08:05.350 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0

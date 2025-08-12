@@ -1,0 +1,7 @@
+2025-08-09 21:05:38.190 | INFO     | __main__:<module>:276 - 成功加载配置文件
+2025-08-09 21:05:38.190 | INFO     | __main__:evaluate_dify_rag:193 - 开始评估Dify知识库召回和RAG系统的答案...
+2025-08-09 21:05:38.373 | INFO     | __main__:evaluate_dify_rag:197 - 加载了 1 条测试数据
+2025-08-09 21:06:05.553 | INFO     | __main__:evaluate_dify_rag:206 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-09 21:06:06.998 | INFO     | __main__:evaluate_dify_rag:207 - API Base URL: https://api.openai.com
+2025-08-09 21:07:01.778 | INFO     | dify_retrieval:__init__:20 - DifyRetrieval初始化成功
+2025-08-09 21:07:01.778 | INFO     | __main__:create_evaluation_dataset:122 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？

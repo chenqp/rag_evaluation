@@ -1,0 +1,49 @@
+2025-08-08 20:59:43.941 | INFO     | __main__:evaluate_dify_retrieval:189 - 开始评估Dify知识库召回内容...
+2025-08-08 20:59:44.084 | INFO     | __main__:evaluate_dify_retrieval:193 - 加载了 100 条测试数据
+2025-08-08 20:59:44.084 | INFO     | __main__:create_ragas_dataset:114 - 开始创建RAGAS评估数据集...
+2025-08-08 20:59:44.084 | INFO     | __main__:create_ragas_dataset:120 - 处理问题 1/100: 二氯二氟甲烷的检出限是多少？
+2025-08-08 20:59:44.084 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 20:59:44.084 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 20:59:44.084 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 20:59:45.048 | ERROR    | __main__:get_rag_answer:179 - 获取RAG答案失败: 'str' object has no attribute 'choices'
+2025-08-08 20:59:45.052 | INFO     | __main__:create_ragas_dataset:137 - 检索到 1 个上下文片段
+2025-08-08 20:59:45.052 | INFO     | __main__:create_ragas_dataset:138 - 无答案
+2025-08-08 20:59:45.052 | INFO     | __main__:create_ragas_dataset:120 - 处理问题 2/100: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-08 20:59:45.052 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 20:59:45.052 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 20:59:45.052 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 20:59:46.047 | ERROR    | __main__:get_rag_answer:179 - 获取RAG答案失败: 'str' object has no attribute 'choices'
+2025-08-08 20:59:46.047 | INFO     | __main__:create_ragas_dataset:137 - 检索到 2 个上下文片段
+2025-08-08 20:59:46.047 | INFO     | __main__:create_ragas_dataset:138 - 无答案
+2025-08-08 20:59:46.047 | INFO     | __main__:create_ragas_dataset:120 - 处理问题 3/100: 土壤样品采集需遵循 “随机” 和 “等量” 原则，简述这两个原则的具体含义及对样品代表性的影响
+2025-08-08 20:59:46.049 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 20:59:46.049 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 20:59:46.049 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 20:59:46.625 | ERROR    | __main__:get_rag_answer:179 - 获取RAG答案失败: 'str' object has no attribute 'choices'
+2025-08-08 20:59:46.625 | INFO     | __main__:create_ragas_dataset:137 - 检索到 1 个上下文片段
+2025-08-08 20:59:46.625 | INFO     | __main__:create_ragas_dataset:138 - 无答案
+2025-08-08 20:59:46.625 | INFO     | __main__:create_ragas_dataset:120 - 处理问题 4/100: 当苯和苯乙烯在空白试验中出现异常高值，可能的原因是什么？
+2025-08-08 20:59:46.625 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 20:59:46.625 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 20:59:46.627 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 20:59:47.582 | ERROR    | __main__:get_rag_answer:179 - 获取RAG答案失败: 'str' object has no attribute 'choices'
+2025-08-08 20:59:47.583 | INFO     | __main__:create_ragas_dataset:137 - 检索到 1 个上下文片段
+2025-08-08 20:59:47.583 | INFO     | __main__:create_ragas_dataset:138 - 无答案
+2025-08-08 20:59:47.583 | INFO     | __main__:create_ragas_dataset:120 - 处理问题 5/100: 空白试验分析结果需满足的条件中，目标物浓度需小于相关环保标准限值的多少？
+2025-08-08 20:59:47.583 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 20:59:47.583 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 20:59:47.584 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 20:59:48.517 | ERROR    | __main__:get_rag_answer:179 - 获取RAG答案失败: 'str' object has no attribute 'choices'
+2025-08-08 20:59:48.517 | INFO     | __main__:create_ragas_dataset:137 - 检索到 1 个上下文片段
+2025-08-08 20:59:48.517 | INFO     | __main__:create_ragas_dataset:138 - 无答案
+2025-08-08 20:59:48.517 | INFO     | __main__:create_ragas_dataset:120 - 处理问题 6/100: 制备铅标准贮备液（ρ(Pb)=1000mg/L）的具体步骤及保存要求是什么？
+2025-08-08 20:59:48.517 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 20:59:48.517 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 20:59:48.517 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-08 20:59:49.120 | ERROR    | __main__:get_rag_answer:179 - 获取RAG答案失败: 'str' object has no attribute 'choices'
+2025-08-08 20:59:49.120 | INFO     | __main__:create_ragas_dataset:137 - 检索到 1 个上下文片段
+2025-08-08 20:59:49.120 | INFO     | __main__:create_ragas_dataset:138 - 无答案
+2025-08-08 20:59:49.120 | INFO     | __main__:create_ragas_dataset:120 - 处理问题 7/100: 土壤样品风干、粗粉碎、磨样分别使用哪些工具？
+2025-08-08 20:59:49.122 | INFO     | dify_retrieval:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 20:59:49.122 | INFO     | dify_retrieval:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 20:59:49.122 | INFO     | dify_retrieval:retrieve:105 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0

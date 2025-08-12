@@ -1,0 +1,1 @@
+2025-08-11 13:13:09.420 | ERROR    | __main__:main:10 - 评估过程中发生错误: __init__() should return None, not 'coroutine'

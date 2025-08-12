@@ -1,0 +1,11 @@
+2025-08-10 11:15:53.607 | INFO     | dify_rag_evaluator:evaluate_dify_rag:251 - 开始评估Dify知识库召回和RAG系统...
+2025-08-10 11:15:53.823 | INFO     | dify_rag_evaluator:evaluate_dify_rag:262 - 加载了 1 条测试数据
+2025-08-10 11:15:54.303 | INFO     | dify_rag_evaluator:create_evaluation_dataset:179 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-10 11:15:54.313 | INFO     | dify_rag_evaluator:retrieve:96 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 11:15:54.313 | INFO     | dify_rag_evaluator:retrieve:97 - 检索参数 - 查询词: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 11:15:54.320 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - top_k: 3
+2025-08-10 11:15:54.320 | INFO     | dify_rag_evaluator:retrieve:125 - 检索配置 - 分数阈值启用: False
+2025-08-10 11:16:06.477 | INFO     | dify_rag_evaluator:create_evaluation_dataset:198 - 检索到 2 个上下文片段
+2025-08-10 11:16:06.477 | INFO     | dify_rag_evaluator:create_evaluation_dataset:199 - RAG系统生成的答案: 二氯二氟甲烷的检出限为0.4 µg/kg。...
+2025-08-10 11:16:06.477 | INFO     | dify_rag_evaluator:evaluate_dify_rag:281 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-10 11:16:06.485 | ERROR    | __main__:main:10 - 评估过程中发生错误: At least one sheet must be visible

@@ -1,0 +1,14 @@
+2025-08-09 21:36:02.501 | INFO     | __main__:main:266 - 成功加载配置文件
+2025-08-09 21:36:02.506 | INFO     | __main__:evaluate_dify_rag:191 - 开始评估Dify知识库召回和RAG系统的答案...
+2025-08-09 21:36:02.602 | INFO     | __main__:evaluate_dify_rag:195 - 加载了 1 条测试数据
+2025-08-09 21:36:02.602 | INFO     | __main__:evaluate_dify_rag:204 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-09 21:36:02.602 | INFO     | __main__:evaluate_dify_rag:205 - API Base URL: https://api.openai.com
+2025-08-09 21:36:04.150 | INFO     | dify_retrieval:__init__:20 - DifyRetrieval初始化成功
+2025-08-09 21:36:04.158 | INFO     | __main__:create_evaluation_dataset:120 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-09 21:36:04.158 | INFO     | dify_retrieval:retrieve:66 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-09 21:36:15.027 | INFO     | __main__:create_evaluation_dataset:139 - 检索到 2 个上下文片段
+2025-08-09 21:36:15.027 | INFO     | __main__:create_evaluation_dataset:140 - RAG系统生成的答案: 二氯二氟甲烷的检出限为0.4 µg/kg。...
+2025-08-09 21:36:15.027 | INFO     | __main__:evaluate_dify_rag:245 - 开始执行RAGAS评估,检索策略:hybrid_search...
+2025-08-09 21:36:19.290 | INFO     | __main__:evaluate_dify_rag:253 - 检索策略:hybrid_search评估完成
+2025-08-09 21:36:19.301 | INFO     | __main__:evaluate_dify_rag:258 - 评估结果已保存到evaluation_results.xlsx
+2025-08-09 21:36:19.301 | INFO     | __main__:main:270 - 评估完成

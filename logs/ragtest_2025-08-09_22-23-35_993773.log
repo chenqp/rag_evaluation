@@ -1,0 +1,6 @@
+2025-08-09 22:23:35.997 | INFO     | __main__:main:269 - 成功加载配置文件
+2025-08-09 22:23:35.997 | INFO     | __main__:evaluate_dify_rag:191 - 开始评估Dify知识库召回和RAG系统...
+2025-08-09 22:23:36.093 | INFO     | __main__:evaluate_dify_rag:198 - 加载了 1 条测试数据
+2025-08-09 22:23:36.093 | INFO     | __main__:evaluate_dify_rag:207 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-09 22:23:36.093 | INFO     | __main__:evaluate_dify_rag:208 - API Base URL: https://api.deepseek.com/v1
+2025-08-09 22:23:37.648 | ERROR    | __main__:main:275 - 评估过程中发生错误: Invalid file path or buffer object type: <class 'NoneType'>

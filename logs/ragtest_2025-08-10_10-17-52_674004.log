@@ -1,0 +1,10 @@
+2025-08-10 10:17:52.677 | INFO     | __main__:load_config:40 - 成功加载配置文件
+2025-08-10 10:17:52.677 | INFO     | __main__:evaluate_dify_rag:258 - 开始评估Dify知识库召回和RAG系统...
+2025-08-10 10:17:55.589 | INFO     | __main__:evaluate_dify_rag:267 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-10 10:17:55.590 | INFO     | __main__:evaluate_dify_rag:268 - API Base URL: https://api.deepseek.com/v1
+2025-08-10 10:17:57.511 | INFO     | __main__:evaluate_dify_rag:286 - 加载了 1 条测试数据
+2025-08-10 10:17:57.977 | INFO     | __main__:create_evaluation_dataset:186 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-10 10:17:57.992 | INFO     | __main__:retrieve:103 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 10:17:57.992 | INFO     | __main__:retrieve:104 - 检索参数 - 查询词: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 10:17:57.992 | INFO     | __main__:retrieve:131 - 检索配置 - top_k: 3
+2025-08-10 10:17:57.992 | INFO     | __main__:retrieve:132 - 检索配置 - 分数阈值启用: False

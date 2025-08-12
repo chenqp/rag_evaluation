@@ -1,0 +1,8 @@
+2025-08-10 15:24:28.748 | INFO     | __main__:process_excel_file:104 - 正在处理文件: evaluation_results1.xlsx
+2025-08-10 15:24:28.850 | INFO     | __main__:setup_output_directory:22 - 输出目录: evaluation_results1_metrcs_plots
+2025-08-10 15:24:28.860 | INFO     | __main__:create_combined_plot:49 - 处理工作表: hybrid_search1
+2025-08-10 15:24:29.327 | INFO     | __main__:create_combined_plot:95 - 已保存: evaluation_results1_hybrid_search1_metrics.png
+2025-08-10 15:24:29.337 | INFO     | __main__:create_combined_plot:49 - 处理工作表: hybrid_search2
+2025-08-10 15:24:29.650 | INFO     | __main__:create_combined_plot:95 - 已保存: evaluation_results1_hybrid_search2_metrics.png
+2025-08-10 15:24:29.650 | INFO     | __main__:main:134 - 
+处理完成! 所有图表已保存到 evaluation_results1_metrcs_plots 目录中

@@ -1,0 +1,11 @@
+2025-08-08 15:28:27.934 | INFO     | __main__:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 15:28:27.935 | INFO     | __main__:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 15:28:27.935 | INFO     | __main__:<module>:301 - 开始测试所有配置...
+2025-08-08 15:28:27.935 | INFO     | __main__:retrieve_configs:159 - 开始遍历配置数组测试检索效果
+2025-08-08 15:28:27.935 | INFO     | __main__:retrieve_configs:167 - 找到 1 个配置项
+2025-08-08 15:28:27.935 | INFO     | __main__:retrieve_configs:170 - 正在测试配置: hybrid_search
+2025-08-08 15:28:27.936 | INFO     | __main__:retrieve:105 - 开始检索知识库: fa675d48-8071-484a-a5bd-6ee7e84e0671
+2025-08-08 15:28:28.476 | INFO     | __main__:retrieve_configs:204 - 配置测试完成
+2025-08-08 15:28:28.476 | INFO     | __main__:<module>:305 - 
+测试结果摘要:
+2025-08-08 15:28:28.476 | INFO     | __main__:<module>:311 - - hybrid_search: 成功 (返回 1 条记录)

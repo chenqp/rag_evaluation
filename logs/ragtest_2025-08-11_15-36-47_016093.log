@@ -1,0 +1,64 @@
+2025-08-11 15:36:47.150 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-11 15:36:48.228 | INFO     | dify_rag_evaluator:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-11 15:38:10.168 | INFO     | dify_rag_evaluator:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-11 15:38:10.168 | INFO     | dify_rag_evaluator:evaluate_dify_rag:250 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-11 15:38:10.325 | INFO     | dify_rag_evaluator:evaluate_dify_rag:258 - 加载了 1 条测试数据
+2025-08-11 15:38:10.872 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-11 15:38:10.872 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 15:38:10.872 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: full_text_search, 启用重排序: False
+2025-08-11 15:38:10.872 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 15:38:10.872 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: False
+2025-08-11 15:38:11.049 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 0 个上下文片段
+2025-08-11 15:38:16.141 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 根据知识库，未检索到二氯二氟甲烷的具体检出限数据。...
+2025-08-11 15:38:16.141 | INFO     | dify_rag_evaluator:evaluate_dify_rag:278 - 开始执行RAGAS评估,检索策略:full_text_search1...
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:evaluate_dify_rag:285 - 检索策略:full_text_search1评估完成
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: full_text_search, 启用重排序: True
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:retrieve:143 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: True
+2025-08-11 15:38:33.908 | INFO     | dify_rag_evaluator:retrieve:147 - 检索配置 - 分数阈值: 0.5
+2025-08-11 15:38:34.145 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 0 个上下文片段
+2025-08-11 15:38:39.400 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 根据知识库，二氯二氟甲烷的检出限信息未提及。...
+2025-08-11 15:38:39.401 | INFO     | dify_rag_evaluator:evaluate_dify_rag:278 - 开始执行RAGAS评估,检索策略:full_text_search2...
+2025-08-11 15:39:03.643 | INFO     | dify_rag_evaluator:evaluate_dify_rag:285 - 检索策略:full_text_search2评估完成
+2025-08-11 15:39:03.645 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-11 15:39:03.645 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 15:39:03.645 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-11 15:39:03.645 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 15:39:03.645 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: False
+2025-08-11 15:39:03.987 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 2 个上下文片段
+2025-08-11 15:39:09.148 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 根据知识库，未检索到二氯二氟甲烷的具体检出限数据。...
+2025-08-11 15:39:09.149 | INFO     | dify_rag_evaluator:evaluate_dify_rag:278 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-11 15:39:31.331 | INFO     | dify_rag_evaluator:evaluate_dify_rag:285 - 检索策略:semantic_search1评估完成
+2025-08-11 15:39:31.332 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-11 15:39:31.332 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 15:39:31.332 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: semantic_search, 启用重排序: True
+2025-08-11 15:39:31.332 | INFO     | dify_rag_evaluator:retrieve:143 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-11 15:39:31.332 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 15:39:31.332 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: True
+2025-08-11 15:39:31.332 | INFO     | dify_rag_evaluator:retrieve:147 - 检索配置 - 分数阈值: 0.5
+2025-08-11 15:39:31.604 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 2 个上下文片段
+2025-08-11 15:39:36.619 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 根据知识库，未检索到二氯二氟甲烷的具体检出限数据。...
+2025-08-11 15:39:36.619 | INFO     | dify_rag_evaluator:evaluate_dify_rag:278 - 开始执行RAGAS评估,检索策略:semantic_search2...
+2025-08-11 15:39:56.687 | INFO     | dify_rag_evaluator:evaluate_dify_rag:285 - 检索策略:semantic_search2评估完成
+2025-08-11 15:39:56.688 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-11 15:39:56.688 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 15:39:56.688 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-11 15:39:56.688 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 15:39:56.688 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: False
+2025-08-11 15:39:56.984 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 2 个上下文片段
+2025-08-11 15:40:02.202 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 根据知识库，未检索到二氯二氟甲烷的具体检出限数据。...
+2025-08-11 15:40:02.202 | INFO     | dify_rag_evaluator:evaluate_dify_rag:278 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-11 15:40:23.468 | INFO     | dify_rag_evaluator:evaluate_dify_rag:285 - 检索策略:hybrid_search1评估完成
+2025-08-11 15:40:23.468 | INFO     | dify_rag_evaluator:create_evaluation_dataset:187 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-11 15:40:23.469 | INFO     | dify_rag_evaluator:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-11 15:40:23.469 | INFO     | dify_rag_evaluator:retrieve:117 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-11 15:40:23.469 | INFO     | dify_rag_evaluator:retrieve:143 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-11 15:40:23.469 | INFO     | dify_rag_evaluator:retrieve:144 - 检索配置 - top_k: 3
+2025-08-11 15:40:23.469 | INFO     | dify_rag_evaluator:retrieve:145 - 检索配置 - 分数阈值启用: True
+2025-08-11 15:40:23.469 | INFO     | dify_rag_evaluator:retrieve:147 - 检索配置 - 分数阈值: 0.5
+2025-08-11 15:40:24.064 | INFO     | dify_rag_evaluator:create_evaluation_dataset:191 - 检索到 2 个上下文片段
+2025-08-11 15:40:29.219 | INFO     | dify_rag_evaluator:create_evaluation_dataset:202 - RAG系统生成的答案: 根据知识库，未检索到二氯二氟甲烷的具体检出限数据。...
+2025-08-11 15:40:29.219 | INFO     | dify_rag_evaluator:evaluate_dify_rag:278 - 开始执行RAGAS评估,检索策略:hybrid_search2...

@@ -1,0 +1,12 @@
+2025-08-08 15:27:18.921 | INFO     | __main__:_load_config:60 - 成功加载配置文件: config.toml
+2025-08-08 15:27:18.921 | INFO     | __main__:__init__:45 - DifyRetrieval客户端初始化成功
+2025-08-08 15:27:18.921 | INFO     | __main__:<module>:301 - 开始测试所有配置...
+2025-08-08 15:27:18.921 | INFO     | __main__:retrieve_configs:159 - 开始遍历配置数组测试检索效果
+2025-08-08 15:27:18.921 | INFO     | __main__:retrieve_configs:167 - 找到 1 个配置项
+2025-08-08 15:27:18.921 | INFO     | __main__:retrieve_configs:170 - 正在测试配置: hybrid_search
+2025-08-08 15:27:18.921 | INFO     | __main__:retrieve:105 - 开始检索知识库: your_dataset_id
+2025-08-08 15:27:19.519 | ERROR    | __main__:retrieve_configs:202 - 配置 hybrid_search 测试失败: 404 Client Error: NOT FOUND for url: http://10.10.0.22/v1/datasets/your_dataset_id/retrieve
+2025-08-08 15:27:19.519 | INFO     | __main__:retrieve_configs:204 - 配置测试完成
+2025-08-08 15:27:19.519 | INFO     | __main__:<module>:305 - 
+测试结果摘要:
+2025-08-08 15:27:19.519 | ERROR    | __main__:<module>:313 - - hybrid_search: 失败 (404 Client Error: NOT FOUND for url: http://10.10.0.22/v1/datasets/your_dataset_id/retrieve)

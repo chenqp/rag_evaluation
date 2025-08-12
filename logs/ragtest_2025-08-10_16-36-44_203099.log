@@ -1,0 +1,12 @@
+2025-08-10 16:36:44.346 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-10 16:36:45.426 | INFO     | dify_rag_evaluator:evaluate_dify_rag:232 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-10 16:36:45.526 | INFO     | dify_rag_evaluator:evaluate_dify_rag:240 - 加载了 1 条测试数据
+2025-08-10 16:36:45.999 | INFO     | dify_rag_evaluator:create_evaluation_dataset:169 - 处理QA对 1/1: 二氯二氟甲烷的检出限是多少？
+2025-08-10 16:36:46.001 | INFO     | dify_rag_evaluator:retrieve:98 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-10 16:36:46.001 | INFO     | dify_rag_evaluator:retrieve:99 - 检索参数 - 查询问题: 二氯二氟甲烷的检出限是多少？, 搜索方法: hybrid_search, 启用重排序: False
+2025-08-10 16:36:46.001 | INFO     | dify_rag_evaluator:retrieve:126 - 检索配置 - top_k: 3
+2025-08-10 16:36:46.001 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - 分数阈值启用: False
+2025-08-10 16:36:46.380 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 检索到 2 个上下文片段
+2025-08-10 16:36:58.143 | INFO     | dify_rag_evaluator:create_evaluation_dataset:184 - RAG系统生成的答案: 二氯二氟甲烷的检出限为 **0.4 µg/kg**。...
+2025-08-10 16:36:58.145 | INFO     | dify_rag_evaluator:evaluate_dify_rag:260 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-10 16:36:59.470 | ERROR    | __main__:main:10 - 评估过程中发生错误: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable

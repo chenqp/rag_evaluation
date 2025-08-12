@@ -1,0 +1,24 @@
+[project]
+name = "rag_evalation"
+version = "0.1.0"
+description = "dify的知识库和RAG的自动化评测工具"
+readme = "README.md"
+authors = [{name="chenqinping",email="chenqinping@126.com"}]
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.28.0",
+    "loguru>=0.7.0",
+    "ragas>=0.1.0",
+    "datasets>=2.14.0",
+    "pandas>=2.0.0",
+    "langchain-openai>=0.1.0",
+    "pillow>=10.0.0",
+    "openpyxl>=3.1.0",
+    "dynaconf>=3.2.11",
+    "matplotlib>=3.10.5",
+    "xlsxwriter>=3.2.5",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true

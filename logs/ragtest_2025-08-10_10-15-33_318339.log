@@ -1,0 +1,5 @@
+2025-08-10 10:15:33.318 | INFO     | __main__:load_config:40 - 成功加载配置文件
+2025-08-10 10:15:33.318 | INFO     | __main__:evaluate_dify_rag:261 - 开始评估Dify知识库召回和RAG系统...
+2025-08-10 10:15:35.579 | INFO     | __main__:evaluate_dify_rag:270 - 使用自定义LLM进行评估: deepseek-chat
+2025-08-10 10:15:35.579 | INFO     | __main__:evaluate_dify_rag:271 - API Base URL: https://api.deepseek.com/v1
+2025-08-10 10:15:37.526 | INFO     | __main__:evaluate_dify_rag:289 - 加载了 1 条测试数据
