@@ -1,0 +1,29 @@
+2025-08-13 19:56:15.548 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:56:17.344 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-13 19:57:43.561 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:57:43.564 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:57:54.005 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:57:58.794 | INFO     | __main__:run_evaluation:251 - 开始创建RAGAS数据集,检索策略:semantic_search1...
+2025-08-13 19:58:00.024 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:58:23.268 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:58:23.848 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-13 19:58:26.298 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:58:27.374 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-13 19:58:56.398 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 3 个上下文片段
+2025-08-13 19:59:12.296 | INFO     | __main__:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:59:19.316 | INFO     | __main__:run_evaluation:257 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-13 20:00:09.683 | INFO     | __main__:run_evaluation:263 - 检索策略:semantic_search1评估完成
+2025-08-13 20:00:13.466 | INFO     | __main__:run_evaluation:251 - 开始创建RAGAS数据集,检索策略:hybrid_search2...
+2025-08-13 20:00:14.889 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 20:00:27.470 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 20:00:27.980 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-13 20:00:29.803 | INFO     | __main__:retrieve:126 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-13 20:00:31.721 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 20:00:34.325 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: True
+2025-08-13 20:00:36.530 | INFO     | __main__:retrieve:130 - 检索配置 - 分数阈值: 0.5
+2025-08-13 20:00:46.072 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 1 个上下文片段
+2025-08-13 20:00:57.998 | INFO     | __main__:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 20:01:00.215 | INFO     | __main__:run_evaluation:257 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-13 20:01:43.408 | INFO     | __main__:run_evaluation:263 - 检索策略:hybrid_search2评估完成
+2025-08-13 20:04:18.145 | INFO     | __main__:run_evaluation:274 - 评估结果已保存到evaluation_results1.xlsx

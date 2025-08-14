@@ -1,0 +1,6 @@
+2025-08-13 19:33:01.209 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:33:03.080 | INFO     | base_rag_evalutor:initialize_evaluator:20 - 正在修改评估prompt适配中文...
+2025-08-13 19:33:03.081 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:34:45.180 | INFO     | base_rag_evalutor:initialize_evaluator:29 - 评估prompt语言已适配为中文
+2025-08-13 19:34:45.180 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:35:50.517 | INFO     | __main__:run_evaluation:237 - 加载了 100 条测试数据

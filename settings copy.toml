@@ -1,0 +1,83 @@
+#open ai api兼容的评估模型
+[evaluator_llm]
+base_url="https://api.deepseek.com/v1"
+#api_key在.secrets.toml设置
+model = "deepseek-chat"
+temperature = 0.3
+
+#使用数组形式定义多个需评估的知识库和rag
+[[dify_rags]]
+#difyde的RAG配置，需安装插件OpenAI Compatible Dify App,并启用api端点将集成了知识库的工作流转换为openai兼容的api
+rag_base_url="http://10.10.0.22/e/8yda0srxv32hwupr"
+rag_api_key="dify_rag"
+#dify知识库配置
+knowledge_base_url="http://10.10.0.22"
+knowledge_api_key="dataset-fxaKD79tTl1Bvep7S706IM2v"
+dataset_id="4c8fbd74-0c29-4f6b-abb7-5a54aec13415"
+qa_excel_file="qa1.xlsx"
+result_excel_file="evaluation_results1.xlsx"
+
+
+# 使用数组形式定义多组测试配置
+[[retrieve_configs]]
+name = "full_text_search1"
+search_method = "full_text_search"
+top_k = 3
+reranking_enable = false
+reranking_model_name = "bge-reranker-v2-m3"
+score_threshold_enabled = false
+score_threshold = 0.5
+
+[[retrieve_configs]]
+name = "full_text_search2"
+search_method = "full_text_search"
+top_k = 3
+reranking_enable = true
+reranking_model_name = "bge-reranker-v2-m3"
+score_threshold_enabled = true
+score_threshold = 0.5
+
+[[retrieve_configs]]
+name = "semantic_search1"
+search_method = "semantic_search"
+top_k = 3
+reranking_enable = false
+reranking_model_name = "bge-reranker-v2-m3"
+score_threshold_enabled = false
+score_threshold = 0.5
+
+[[retrieve_configs]]
+name = "semantic_search2"
+search_method = "semantic_search"
+top_k = 3
+reranking_enable = true
+reranking_model_name = "bge-reranker-v2-m3"
+score_threshold_enabled = true
+score_threshold = 0.5
+
+[[retrieve_configs]]
+name = "hybrid_search1"
+search_method = "hybrid_search"
+top_k = 3
+reranking_enable = false
+reranking_model_name = "bge-reranker-v2-m3"
+score_threshold_enabled = false
+score_threshold = 0.5
+
+[[retrieve_configs]]
+name = "hybrid_search2"
+search_method = "hybrid_search"
+top_k = 3
+reranking_enable = true
+reranking_model_name = "bge-reranker-v2-m3"
+score_threshold_enabled = true
+score_threshold = 0.5
+
+[[lightrags]]
+base_url = "http://10.10.0.25:9621"
+model = "lightrag:latest"
+temperature = 0.3
+max_tokens = 4096
+qa_excel_file="qa2.xlsx"
+result_excel_file="evaluation_results2.xlsx"
+

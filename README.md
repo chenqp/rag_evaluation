@@ -5,16 +5,18 @@
 ## 评估指标
 
 - ContextPrecision：上下文精度，衡量 retrieved_contexts 中相关块比例的指标，计算方法是上下文中的每个块的 precision@k 的平均值
-- ContextRecall：上下文召回率，从知识库中检索到的相关文档数量相较于总相关文档数量的比值
+- ContextRecall：上下文召回率，从知识库中检索到的相关文档数量相较于总相关文档数量的比值,用LLM评估时，是用LLM评估所有召回的上下文'claim'的数量/参考答案中的'claim'的数量
 - ContextRelevance：上下文相关性，评估检索到的上下文（块或段落）是否与用户输入相关
 - Faithfulness：忠实度，衡量RAG响应与检索到的上下文的事实一致性
 - AnswerAccuracy：回答准确性，衡量RAG响应与给定问题的参考标准答案之间的一致性
 
 ## 功能特点
 
-- 支持多组知识库和RAG工作流评估
-- 支持多种检索方法：关键词搜索、语义搜索、全文搜索、混合搜索
-- 支持设置重排序功能
+- 支持dify多组知识库和RAG工作流评估
+- 支持lightrag的评估
+- 支持dify多种检索方法：关键词搜索、语义搜索、全文搜索、混合搜索
+- 支持ligthtRAG的多种检索方法：local ,global, hybrid, mix,naive ,bypass
+- 支持设置重排序
 - 可配置检索top-k返回数量
 - 支持 Score 阈值过滤
 - 支持通过配置文件管理多组参数评估配置
@@ -86,11 +88,11 @@ score_threshold = 0.6
 4. 在项目文件夹运行评估脚本：
 
 ```bash
-uv run main.py
-或者
+
 uv run dify_rag_evaluator.py
+uv run lightrag_evalutor.py
 ```
 
-评估结果默认保存在 evaluation_results1.xlsx,可在settings.toml中修改。
+评估结果可在settings.toml中修改。
 metrics_plot.py根据结果文件，绘制指标的直方图分布
 

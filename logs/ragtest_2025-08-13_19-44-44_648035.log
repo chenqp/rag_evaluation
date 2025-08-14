@@ -1,0 +1,10 @@
+2025-08-13 19:44:44.795 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:44:46.616 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-13 19:46:11.360 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:46:11.360 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:46:25.607 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:46:31.318 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:46:51.051 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:46:51.704 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-13 19:46:54.021 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:46:54.042 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: False

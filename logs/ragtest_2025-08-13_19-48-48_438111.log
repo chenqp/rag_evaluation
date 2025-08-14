@@ -1,0 +1,28 @@
+2025-08-13 19:48:48.559 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:48:49.619 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-13 19:50:13.657 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:50:13.657 | INFO     | dify_rag_evaluator:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:50:13.765 | INFO     | dify_rag_evaluator:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-13 19:50:14.679 | INFO     | dify_rag_evaluator:create_evaluation_dataset:177 - 检索到 3 个上下文片段
+2025-08-13 19:50:20.513 | INFO     | dify_rag_evaluator:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:50:20.513 | INFO     | dify_rag_evaluator:run_evaluation:256 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-13 19:51:00.834 | INFO     | dify_rag_evaluator:run_evaluation:262 - 检索策略:semantic_search1评估完成
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:126 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:128 - 检索配置 - 分数阈值启用: True
+2025-08-13 19:51:00.837 | INFO     | dify_rag_evaluator:retrieve:130 - 检索配置 - 分数阈值: 0.5
+2025-08-13 19:51:01.575 | INFO     | dify_rag_evaluator:create_evaluation_dataset:177 - 检索到 1 个上下文片段
+2025-08-13 19:51:08.002 | INFO     | dify_rag_evaluator:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:51:08.002 | INFO     | dify_rag_evaluator:run_evaluation:256 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-13 19:51:48.874 | INFO     | dify_rag_evaluator:run_evaluation:262 - 检索策略:hybrid_search2评估完成
+2025-08-13 19:51:48.911 | INFO     | dify_rag_evaluator:run_evaluation:273 - 评估结果已保存到evaluation_results1.xlsx

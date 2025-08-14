@@ -1,0 +1,31 @@
+2025-08-14 14:33:00.402 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 14:33:02.288 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 14:34:29.621 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 14:34:29.621 | INFO     | __main__:run_evaluation:226 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 14:34:35.661 | INFO     | __main__:run_evaluation:234 - 加载了 1 条测试数据
+2025-08-14 14:34:35.663 | INFO     | __main__:run_evaluation:242 - 开始创建RAGAS数据集,检索策略:hybrid...
+2025-08-14 14:34:35.664 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 14:35:59.120 | INFO     | __main__:create_evaluation_dataset:69 - RAG系统生成的答案: 根据《住宅项目规范》中的规定，住宅建筑设置电梯的要求如下：
+
+### 电梯设置标准
+1. **最低要求**  
+   当住宅建筑满足以下任一条件时，每个住宅单元需至少设置1台电梯：  
+   - 最高入户层为**四层及四层以上**；  
+   - 最高入户层楼面距室外设计地面高度**超过9米**。
+
+2. **更高要求**  
+   当住宅建筑满足以下任一条件时，每个住宅单元需至少设置2台电梯： ...
+2025-08-14 14:35:59.120 | INFO     | __main__:run_evaluation:248 - 开始执行RAGAS评估,检索策略:hybrid...
+2025-08-14 14:37:13.740 | INFO     | __main__:run_evaluation:254 - 检索策略:hybrid评估完成
+2025-08-14 14:37:13.743 | INFO     | __main__:run_evaluation:242 - 开始创建RAGAS数据集,检索策略:global...
+2025-08-14 14:37:13.743 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 14:38:34.541 | INFO     | __main__:create_evaluation_dataset:69 - RAG系统生成的答案: ### 住宅电梯设置要求
+
+根据《住宅项目规范》中的相关规定，住宅建筑电梯的设置需满足以下要求：
+
+1. **四层及以上住宅**  
+   - **最低要求**：当住宅建筑最高入户层为**四层及四层以上**，或最高入户层楼面距室外设计地面高度**超过9米**时，每个住宅单元应至少设置**1台电梯**。
+   - **尺寸要求**：至少有1台电梯需满足轿厢门净宽**不小于0.90米**，或采用宽轿厢...
+2025-08-14 14:38:34.541 | INFO     | __main__:run_evaluation:248 - 开始执行RAGAS评估,检索策略:global...
+2025-08-14 14:40:14.896 | INFO     | __main__:run_evaluation:254 - 检索策略:global评估完成
+2025-08-14 14:40:14.979 | INFO     | base_rag_evalutor:save_results:82 - 评估结果已保存到 evaluation_results2.xlsx

@@ -1,0 +1,9 @@
+2025-08-14 13:48:03.925 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:48:05.754 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:49:28.797 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:49:28.798 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:49:29.051 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 13:49:29.052 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:49:29.052 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:50:21.988 | ERROR    | __main__:retrieve:186 - 检索 light rag error: body.user_prompt: Input should be a valid string
+2025-08-14 13:50:21.989 | ERROR    | __main__:main:272 - 评估过程中发生错误: body.user_prompt: Input should be a valid string

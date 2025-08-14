@@ -1,0 +1,11 @@
+2025-08-13 19:38:55.993 | INFO     | base_rag_evalutor:initialize_evaluator:19 - 正在修改评估prompt适配中文...
+2025-08-13 19:38:56.117 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:40:18.242 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:40:18.242 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:40:18.365 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:40:18.862 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:40:18.863 | ERROR    | __main__:retrieve:152 - Dify检索失败: cannot access local variable 'weights' where it is not associated with a value
+2025-08-13 19:40:18.863 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 0 个上下文片段
+2025-08-13 19:40:35.182 | ERROR    | __main__:get_rag_response:222 - 获取RAG答案失败: Error code: 502
+2025-08-13 19:40:35.182 | INFO     | __main__:create_evaluation_dataset:189 - 无答案
+2025-08-13 19:40:35.182 | INFO     | __main__:run_evaluation:256 - 开始执行RAGAS评估,检索策略:semantic_search1...

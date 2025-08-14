@@ -17,25 +17,64 @@ dataset_id="4c6c9113-c053-4929-b252-482e634f1ec0"
 qa_excel_file="qa1.xlsx"
 result_excel_file="evaluation_results1.xlsx"
 
+    # 使用数组形式定义多组测试配置
+    [[dify_rags.retrieve_configs]]
+    name = "semantic_search1"
+    search_method = "semantic_search"
+    top_k = 3
+    reranking_enable = false
+    reranking_model_name = "bge-reranker-v2-m3"
+    score_threshold_enabled = false
+    score_threshold = 0.5
 
-# 使用数组形式定义多组测试配置
+    [[dify_rags.retrieve_configs]]
+    name = "hybrid_search_weight"
+    search_method = "hybrid_search"
+    top_k = 3
+    reranking_enable = true
+    reranking_mode = "weighted_score"
+    keyword_weight = 0.1
+    vector_weight = 0.9
+    embedding_model_name = "bge-m3"
+    embedding_provider_name = "langgenius/xinference/xinference"
+    reranking_model_name = "bge-reranker-v2-m3"
+    reranking_provider_name = "langgenius/xinference/xinference"
+    score_threshold_enabled = false
+    score_threshold = 0.5
 
-
-
-[[retrieve_configs]]
-name = "hybrid_search2"
-search_method = "hybrid_search"
-top_k = 3
-reranking_enable = true
-reranking_model_name = "bge-reranker-v2-m3"
-score_threshold_enabled = true
-score_threshold = 0.5
+    [[dify_rags.retrieve_configs]]
+    name = "hybrid_search_reranking"
+    search_method = "hybrid_search"
+    top_k = 3
+    reranking_enable = true
+    reranking_mode = "reranking_model"
+    embedding_provider_name = "langgenius/xinference/xinference"
+    reranking_model_name = "bge-reranker-v2-m3"
+    reranking_provider_name = "langgenius/xinference/xinference"
+    score_threshold_enabled = true
+    score_threshold = 0.5
 
 [[lightrags]]
-base_url = "http://10.10.0.25:9621"
-model = "lightrag:latest"
-temperature = 0.3
-max_tokens = 4096
+base_url = "http://10.10.0.22:9621"
+api_key = ""
 qa_excel_file="qa2.xlsx"
 result_excel_file="evaluation_results2.xlsx"
+timeout = 120
+
+    # 使用数组形式定义多组测试配置
+    [[lightrags.retrieve_configs]]
+    name = "hybrid"
+    mode = "hybrid"
+    top_k = 5
+    chunk_top_k = 5
+    response_type = "Multiple Paragraphs"
+    enable_rerank = true
+
+    [[lightrags.retrieve_configs]]
+    name = "global"
+    mode = "global"
+    top_k = 5
+    chunk_top_k = 5
+    response_type = "Multiple Paragraphs"
+    enable_rerank = true
 

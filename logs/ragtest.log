@@ -10724,3 +10724,523 @@ GC-MS: 气相色谱-质谱联用法...
 2025-08-12 13:53:16.255 | INFO     | __main__:retrieve:144 - 检索配置 - top_k: 3
 2025-08-12 13:53:16.255 | INFO     | __main__:retrieve:145 - 检索配置 - 分数阈值启用: True
 2025-08-12 13:53:16.255 | INFO     | __main__:retrieve:147 - 检索配置 - 分数阈值: 0.5
+2025-08-12 16:55:30.956 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-12 16:55:32.958 | INFO     | __main__:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-12 16:56:55.540 | INFO     | __main__:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-12 16:56:55.540 | INFO     | __main__:evaluate_dify_rag:250 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-12 16:56:55.821 | INFO     | __main__:evaluate_dify_rag:258 - 加载了 1 条测试数据
+2025-08-12 16:56:56.335 | INFO     | __main__:create_evaluation_dataset:187 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 16:56:56.336 | INFO     | __main__:retrieve:116 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 16:56:56.336 | INFO     | __main__:retrieve:117 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 16:56:56.336 | INFO     | __main__:retrieve:143 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 16:56:56.336 | INFO     | __main__:retrieve:144 - 检索配置 - top_k: 3
+2025-08-12 16:56:56.336 | INFO     | __main__:retrieve:145 - 检索配置 - 分数阈值启用: True
+2025-08-12 16:56:56.336 | INFO     | __main__:retrieve:147 - 检索配置 - 分数阈值: 0.5
+2025-08-12 18:47:01.085 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-12 18:47:02.505 | INFO     | dify_rag_evaluator:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-12 18:48:25.348 | INFO     | dify_rag_evaluator:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-12 18:48:25.348 | INFO     | dify_rag_evaluator:evaluate_dify_rag:281 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-12 18:48:25.486 | INFO     | dify_rag_evaluator:evaluate_dify_rag:289 - 加载了 1 条测试数据
+2025-08-12 18:48:26.035 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 18:48:26.036 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 18:48:26.036 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 18:48:26.036 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 18:48:26.036 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 18:48:26.036 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: False
+2025-08-12 18:48:26.036 | INFO     | dify_rag_evaluator:retrieve:176 - 混合检索 - 权重设置: {'keyword_setting': {'keyword_weight': 'bge-m3'}, 'vector_setting': {'embedding_model_name': 'bge-m3', 'embedding_provider_name': 'bge-m3', 'vector_weight': 'bge-m3'}, 'weight_type': 'customized'}
+2025-08-12 18:48:26.428 | ERROR    | dify_rag_evaluator:retrieve:197 - Dify检索失败: 400 Client Error: BAD REQUEST for url: http://10.10.0.22/v1/datasets/4c6c9113-c053-4929-b252-482e634f1ec0/retrieve
+2025-08-12 18:48:26.428 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 0 个上下文片段
+2025-08-12 18:48:33.712 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 99μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-12 18:48:33.712 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-12 18:49:06.905 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search1评估完成
+2025-08-12 18:49:06.906 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 18:49:06.906 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 18:49:06.906 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 18:49:06.906 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 18:49:06.906 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 18:49:06.906 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: True
+2025-08-12 18:49:06.906 | INFO     | dify_rag_evaluator:retrieve:173 - 检索配置 - 分数阈值: 0.5
+2025-08-12 18:49:08.266 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 1 个上下文片段
+2025-08-12 18:49:14.096 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-12 18:49:14.097 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-12 18:49:52.515 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search2评估完成
+2025-08-12 18:49:52.599 | INFO     | dify_rag_evaluator:evaluate_dify_rag:327 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-12 18:51:48.852 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-12 18:51:49.973 | INFO     | dify_rag_evaluator:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-12 18:53:15.875 | INFO     | dify_rag_evaluator:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-12 18:53:15.875 | INFO     | dify_rag_evaluator:evaluate_dify_rag:281 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-12 18:53:15.996 | INFO     | dify_rag_evaluator:evaluate_dify_rag:289 - 加载了 1 条测试数据
+2025-08-12 18:53:16.516 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 18:53:16.516 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 18:53:16.516 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 18:53:16.516 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 18:53:16.516 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 18:53:16.516 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: False
+2025-08-12 18:53:16.516 | INFO     | dify_rag_evaluator:retrieve:176 - 混合检索 - 权重设置: {'keyword_setting': {'keyword_weight': 'bge-m3'}, 'vector_setting': {'embedding_model_name': 'bge-m3', 'embedding_provider_name': 'bge-m3', 'vector_weight': 'bge-m3'}, 'weight_type': 'customized'}
+2025-08-12 18:53:17.757 | ERROR    | dify_rag_evaluator:retrieve:197 - Dify检索失败: 400 Client Error: BAD REQUEST for url: http://10.10.0.22/v1/datasets/4c6c9113-c053-4929-b252-482e634f1ec0/retrieve
+2025-08-12 18:53:17.757 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 0 个上下文片段
+2025-08-12 18:53:23.676 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-12 18:53:23.676 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search1评估完成
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: True
+2025-08-12 18:53:57.002 | INFO     | dify_rag_evaluator:retrieve:173 - 检索配置 - 分数阈值: 0.5
+2025-08-12 18:53:58.429 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 1 个上下文片段
+2025-08-12 18:54:03.905 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 98μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-12 18:54:03.905 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-12 18:54:40.141 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search2评估完成
+2025-08-12 18:54:40.185 | INFO     | dify_rag_evaluator:evaluate_dify_rag:327 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-12 18:54:50.889 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-12 18:54:52.027 | INFO     | dify_rag_evaluator:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-12 18:56:16.573 | INFO     | dify_rag_evaluator:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-12 18:56:16.573 | INFO     | dify_rag_evaluator:evaluate_dify_rag:281 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-12 18:56:16.684 | INFO     | dify_rag_evaluator:evaluate_dify_rag:289 - 加载了 1 条测试数据
+2025-08-12 18:56:17.209 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 18:56:17.209 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 18:56:17.209 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 18:56:17.209 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 18:56:17.209 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 18:56:17.209 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: False
+2025-08-12 18:56:17.209 | INFO     | dify_rag_evaluator:retrieve:176 - 混合检索 - 权重设置: {'keyword_setting': {'keyword_weight': 0.1}, 'vector_setting': {'embedding_model_name': 'bge-m3', 'embedding_provider_name': 'bge-m3', 'vector_weight': 'bge-m3'}, 'weight_type': 'customized'}
+2025-08-12 18:56:17.995 | ERROR    | dify_rag_evaluator:retrieve:197 - Dify检索失败: 400 Client Error: BAD REQUEST for url: http://10.10.0.22/v1/datasets/4c6c9113-c053-4929-b252-482e634f1ec0/retrieve
+2025-08-12 18:56:17.997 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 0 个上下文片段
+2025-08-12 18:56:23.560 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 99μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-12 18:56:23.560 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-12 18:56:58.079 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search1评估完成
+2025-08-12 18:56:58.079 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 18:56:58.079 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 18:56:58.081 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 18:56:58.081 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 18:56:58.081 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 18:56:58.081 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: True
+2025-08-12 18:56:58.081 | INFO     | dify_rag_evaluator:retrieve:173 - 检索配置 - 分数阈值: 0.5
+2025-08-12 18:56:58.538 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 1 个上下文片段
+2025-08-12 18:57:04.523 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 99μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-12 18:57:04.524 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-12 18:57:45.125 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search2评估完成
+2025-08-12 18:57:45.160 | INFO     | dify_rag_evaluator:evaluate_dify_rag:327 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-12 18:59:12.288 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-12 18:59:13.442 | INFO     | dify_rag_evaluator:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-12 19:00:37.973 | INFO     | dify_rag_evaluator:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-12 19:00:37.973 | INFO     | dify_rag_evaluator:evaluate_dify_rag:281 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-12 19:00:38.086 | INFO     | dify_rag_evaluator:evaluate_dify_rag:289 - 加载了 1 条测试数据
+2025-08-12 19:00:38.607 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 19:00:38.607 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 19:00:38.607 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 19:00:38.607 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 19:00:38.607 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 19:00:38.607 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: False
+2025-08-12 19:00:38.607 | INFO     | dify_rag_evaluator:retrieve:176 - 混合检索 - 权重设置: {'keyword_setting': {'keyword_weight': 0.1}, 'vector_setting': {'embedding_model_name': 'bge-m3', 'embedding_provider_name': 'langgenius/xinference/xinference', 'vector_weight': 0.9}, 'weight_type': 'customized'}
+2025-08-12 19:00:39.903 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 3 个上下文片段
+2025-08-12 19:00:46.423 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 99μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-12 19:00:46.423 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-12 19:01:23.680 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search1评估完成
+2025-08-12 19:01:23.681 | INFO     | dify_rag_evaluator:create_evaluation_dataset:218 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 19:01:23.681 | INFO     | dify_rag_evaluator:retrieve:165 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 19:01:23.681 | INFO     | dify_rag_evaluator:retrieve:166 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 19:01:23.681 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 19:01:23.681 | INFO     | dify_rag_evaluator:retrieve:170 - 检索配置 - top_k: 3
+2025-08-12 19:01:23.681 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值启用: True
+2025-08-12 19:01:23.681 | INFO     | dify_rag_evaluator:retrieve:173 - 检索配置 - 分数阈值: 0.5
+2025-08-12 19:01:24.856 | INFO     | dify_rag_evaluator:create_evaluation_dataset:222 - 检索到 1 个上下文片段
+2025-08-12 19:01:30.656 | INFO     | dify_rag_evaluator:create_evaluation_dataset:233 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-12 19:01:30.657 | INFO     | dify_rag_evaluator:evaluate_dify_rag:309 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-12 19:02:05.920 | INFO     | dify_rag_evaluator:evaluate_dify_rag:316 - 检索策略:hybrid_search2评估完成
+2025-08-12 19:02:05.960 | INFO     | dify_rag_evaluator:evaluate_dify_rag:327 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-12 19:04:57.020 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-12 19:04:58.420 | INFO     | dify_rag_evaluator:set_adapt_prompts:30 - 正在修改评估prompt适配中文......
+2025-08-12 19:06:21.425 | INFO     | dify_rag_evaluator:set_adapt_prompts:46 - 评估prompt语言已适配为中文
+2025-08-12 19:06:21.425 | INFO     | dify_rag_evaluator:evaluate_dify_rag:279 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-12 19:06:21.565 | INFO     | dify_rag_evaluator:evaluate_dify_rag:287 - 加载了 1 条测试数据
+2025-08-12 19:06:22.216 | INFO     | dify_rag_evaluator:create_evaluation_dataset:216 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 19:06:22.216 | INFO     | dify_rag_evaluator:retrieve:163 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 19:06:22.216 | INFO     | dify_rag_evaluator:retrieve:164 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 19:06:22.216 | INFO     | dify_rag_evaluator:retrieve:167 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 19:06:22.216 | INFO     | dify_rag_evaluator:retrieve:168 - 检索配置 - top_k: 3
+2025-08-12 19:06:22.216 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 - 分数阈值启用: False
+2025-08-12 19:06:22.216 | INFO     | dify_rag_evaluator:retrieve:174 - 混合检索 - 权重设置: {'keyword_setting': {'keyword_weight': 0.1}, 'vector_setting': {'embedding_model_name': 'bge-m3', 'embedding_provider_name': 'langgenius/xinference/xinference', 'vector_weight': 0.9}, 'weight_type': 'customized'}
+2025-08-12 19:06:23.109 | INFO     | dify_rag_evaluator:create_evaluation_dataset:220 - 检索到 3 个上下文片段
+2025-08-12 19:06:29.556 | INFO     | dify_rag_evaluator:create_evaluation_dataset:231 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 98μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-12 19:06:29.556 | INFO     | dify_rag_evaluator:evaluate_dify_rag:307 - 开始执行RAGAS评估,检索策略:hybrid_search1...
+2025-08-12 19:07:10.566 | INFO     | dify_rag_evaluator:evaluate_dify_rag:314 - 检索策略:hybrid_search1评估完成
+2025-08-12 19:07:10.566 | INFO     | dify_rag_evaluator:create_evaluation_dataset:216 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-12 19:07:10.567 | INFO     | dify_rag_evaluator:retrieve:163 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-12 19:07:10.567 | INFO     | dify_rag_evaluator:retrieve:164 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-12 19:07:10.567 | INFO     | dify_rag_evaluator:retrieve:167 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-12 19:07:10.567 | INFO     | dify_rag_evaluator:retrieve:168 - 检索配置 - top_k: 3
+2025-08-12 19:07:10.567 | INFO     | dify_rag_evaluator:retrieve:169 - 检索配置 - 分数阈值启用: True
+2025-08-12 19:07:10.567 | INFO     | dify_rag_evaluator:retrieve:171 - 检索配置 - 分数阈值: 0.5
+2025-08-12 19:07:11.146 | INFO     | dify_rag_evaluator:create_evaluation_dataset:220 - 检索到 1 个上下文片段
+2025-08-12 19:07:17.655 | INFO     | dify_rag_evaluator:create_evaluation_dataset:231 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-12 19:07:17.655 | INFO     | dify_rag_evaluator:evaluate_dify_rag:307 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-12 19:07:54.279 | INFO     | dify_rag_evaluator:evaluate_dify_rag:314 - 检索策略:hybrid_search2评估完成
+2025-08-12 19:07:54.328 | INFO     | dify_rag_evaluator:evaluate_dify_rag:325 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-13 19:33:01.209 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:33:03.080 | INFO     | base_rag_evalutor:initialize_evaluator:20 - 正在修改评估prompt适配中文...
+2025-08-13 19:33:03.081 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:34:45.180 | INFO     | base_rag_evalutor:initialize_evaluator:29 - 评估prompt语言已适配为中文
+2025-08-13 19:34:45.180 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:35:50.517 | INFO     | __main__:run_evaluation:237 - 加载了 100 条测试数据
+2025-08-13 19:38:55.993 | INFO     | base_rag_evalutor:initialize_evaluator:19 - 正在修改评估prompt适配中文...
+2025-08-13 19:38:56.117 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:40:18.242 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:40:18.242 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:40:18.365 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:40:18.862 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:40:18.863 | ERROR    | __main__:retrieve:152 - Dify检索失败: cannot access local variable 'weights' where it is not associated with a value
+2025-08-13 19:40:18.863 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 0 个上下文片段
+2025-08-13 19:40:35.182 | ERROR    | __main__:get_rag_response:222 - 获取RAG答案失败: Error code: 502
+2025-08-13 19:40:35.182 | INFO     | __main__:create_evaluation_dataset:189 - 无答案
+2025-08-13 19:40:35.182 | INFO     | __main__:run_evaluation:256 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-13 19:44:44.795 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:44:46.616 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-13 19:46:11.360 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:46:11.360 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:46:25.607 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:46:31.318 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:46:51.051 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:46:51.704 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-13 19:46:54.021 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:46:54.042 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-13 19:48:19.235 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:48:20.310 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-13 19:48:48.559 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:48:49.619 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-13 19:49:45.875 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:49:45.875 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:49:45.976 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:49:46.467 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:49:46.468 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:49:46.468 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-13 19:49:46.468 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:49:46.468 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-13 19:49:47.522 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 3 个上下文片段
+2025-08-13 19:49:53.974 | INFO     | __main__:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:49:53.975 | INFO     | __main__:run_evaluation:256 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-13 19:50:13.657 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:50:13.657 | INFO     | dify_rag_evaluator:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:50:13.765 | INFO     | dify_rag_evaluator:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:50:14.256 | INFO     | dify_rag_evaluator:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-13 19:50:14.679 | INFO     | dify_rag_evaluator:create_evaluation_dataset:177 - 检索到 3 个上下文片段
+2025-08-13 19:50:20.513 | INFO     | dify_rag_evaluator:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:50:20.513 | INFO     | dify_rag_evaluator:run_evaluation:256 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-13 19:50:37.085 | INFO     | __main__:run_evaluation:262 - 检索策略:semantic_search1评估完成
+2025-08-13 19:50:37.086 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:50:37.086 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:50:37.086 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-13 19:50:37.086 | INFO     | __main__:retrieve:126 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-13 19:50:37.086 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:50:37.086 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: True
+2025-08-13 19:50:37.086 | INFO     | __main__:retrieve:130 - 检索配置 - 分数阈值: 0.5
+2025-08-13 19:50:37.746 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 1 个上下文片段
+2025-08-13 19:50:43.833 | INFO     | __main__:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:50:43.833 | INFO     | __main__:run_evaluation:256 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-13 19:51:00.834 | INFO     | dify_rag_evaluator:run_evaluation:262 - 检索策略:semantic_search1评估完成
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:126 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:51:00.835 | INFO     | dify_rag_evaluator:retrieve:128 - 检索配置 - 分数阈值启用: True
+2025-08-13 19:51:00.837 | INFO     | dify_rag_evaluator:retrieve:130 - 检索配置 - 分数阈值: 0.5
+2025-08-13 19:51:01.575 | INFO     | dify_rag_evaluator:create_evaluation_dataset:177 - 检索到 1 个上下文片段
+2025-08-13 19:51:08.002 | INFO     | dify_rag_evaluator:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:51:08.002 | INFO     | dify_rag_evaluator:run_evaluation:256 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-13 19:51:18.680 | INFO     | __main__:run_evaluation:262 - 检索策略:hybrid_search2评估完成
+2025-08-13 19:51:18.749 | INFO     | __main__:run_evaluation:273 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-13 19:51:48.874 | INFO     | dify_rag_evaluator:run_evaluation:262 - 检索策略:hybrid_search2评估完成
+2025-08-13 19:51:48.911 | INFO     | dify_rag_evaluator:run_evaluation:273 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-13 19:56:15.548 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-13 19:56:17.344 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-13 19:57:43.561 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-13 19:57:43.564 | INFO     | __main__:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-13 19:57:54.005 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-13 19:57:58.794 | INFO     | __main__:run_evaluation:251 - 开始创建RAGAS数据集,检索策略:semantic_search1...
+2025-08-13 19:58:00.024 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 19:58:23.268 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 19:58:23.848 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-13 19:58:26.298 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 19:58:27.374 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-13 19:58:56.398 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 3 个上下文片段
+2025-08-13 19:59:12.296 | INFO     | __main__:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 19:59:19.316 | INFO     | __main__:run_evaluation:257 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-13 20:00:09.683 | INFO     | __main__:run_evaluation:263 - 检索策略:semantic_search1评估完成
+2025-08-13 20:00:13.466 | INFO     | __main__:run_evaluation:251 - 开始创建RAGAS数据集,检索策略:hybrid_search2...
+2025-08-13 20:00:14.889 | INFO     | __main__:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-13 20:00:27.470 | INFO     | __main__:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-13 20:00:27.980 | INFO     | __main__:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-13 20:00:29.803 | INFO     | __main__:retrieve:126 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-13 20:00:31.721 | INFO     | __main__:retrieve:127 - 检索配置 - top_k: 3
+2025-08-13 20:00:34.325 | INFO     | __main__:retrieve:128 - 检索配置 - 分数阈值启用: True
+2025-08-13 20:00:36.530 | INFO     | __main__:retrieve:130 - 检索配置 - 分数阈值: 0.5
+2025-08-13 20:00:46.072 | INFO     | __main__:create_evaluation_dataset:177 - 检索到 1 个上下文片段
+2025-08-13 20:00:57.998 | INFO     | __main__:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-13 20:01:00.215 | INFO     | __main__:run_evaluation:257 - 开始执行RAGAS评估,检索策略:hybrid_search2...
+2025-08-13 20:01:43.408 | INFO     | __main__:run_evaluation:263 - 检索策略:hybrid_search2评估完成
+2025-08-13 20:04:18.145 | INFO     | __main__:run_evaluation:274 - 评估结果已保存到evaluation_results1.xlsx
+2025-08-14 09:03:27.627 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 09:03:29.125 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 09:04:51.634 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 09:04:51.634 | INFO     | dify_rag_evaluator:run_evaluation:229 - 开始评估Dify知识库检索和RAG工作流生成的质量...
+2025-08-14 09:04:51.823 | INFO     | dify_rag_evaluator:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 09:04:52.410 | INFO     | dify_rag_evaluator:run_evaluation:250 - 开始创建RAGAS数据集,检索策略:semantic_search1...
+2025-08-14 09:04:52.410 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-14 09:04:52.417 | INFO     | dify_rag_evaluator:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-14 09:04:52.417 | INFO     | dify_rag_evaluator:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-14 09:04:52.417 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - top_k: 3
+2025-08-14 09:04:52.417 | INFO     | dify_rag_evaluator:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-14 09:05:14.962 | INFO     | dify_rag_evaluator:create_evaluation_dataset:177 - 检索到 3 个上下文片段
+2025-08-14 09:05:20.906 | INFO     | dify_rag_evaluator:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 99μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-14 09:05:20.906 | INFO     | dify_rag_evaluator:run_evaluation:256 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-14 09:05:59.580 | INFO     | dify_rag_evaluator:run_evaluation:262 - 检索策略:semantic_search1评估完成
+2025-08-14 09:05:59.581 | INFO     | dify_rag_evaluator:run_evaluation:250 - 开始创建RAGAS数据集,检索策略:hybrid_search_weight...
+2025-08-14 09:05:59.581 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-14 09:05:59.582 | INFO     | dify_rag_evaluator:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-14 09:05:59.582 | INFO     | dify_rag_evaluator:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-14 09:05:59.582 | INFO     | dify_rag_evaluator:retrieve:126 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-14 09:05:59.582 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - top_k: 3
+2025-08-14 09:05:59.582 | INFO     | dify_rag_evaluator:retrieve:128 - 检索配置 - 分数阈值启用: False
+2025-08-14 09:05:59.582 | INFO     | dify_rag_evaluator:retrieve:133 - 混合检索 - 权重设置: {'keyword_setting': {'keyword_weight': 0.1}, 'vector_setting': {'embedding_model_name': 'bge-m3', 'embedding_provider_name': 'langgenius/xinference/xinference', 'vector_weight': 0.9}, 'weight_type': 'customized'}
+2025-08-14 09:06:02.895 | INFO     | dify_rag_evaluator:create_evaluation_dataset:177 - 检索到 3 个上下文片段
+2025-08-14 09:06:08.866 | INFO     | dify_rag_evaluator:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 99μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-14 09:06:08.866 | INFO     | dify_rag_evaluator:run_evaluation:256 - 开始执行RAGAS评估,检索策略:hybrid_search_weight...
+2025-08-14 09:06:54.015 | INFO     | dify_rag_evaluator:run_evaluation:262 - 检索策略:hybrid_search_weight评估完成
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:run_evaluation:250 - 开始创建RAGAS数据集,检索策略:hybrid_search_reranking...
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:retrieve:122 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:retrieve:123 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:retrieve:126 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:retrieve:127 - 检索配置 - top_k: 3
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:retrieve:128 - 检索配置 - 分数阈值启用: True
+2025-08-14 09:06:54.016 | INFO     | dify_rag_evaluator:retrieve:130 - 检索配置 - 分数阈值: 0.5
+2025-08-14 09:06:55.571 | INFO     | dify_rag_evaluator:create_evaluation_dataset:177 - 检索到 1 个上下文片段
+2025-08-14 09:07:01.454 | INFO     | dify_rag_evaluator:create_evaluation_dataset:189 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-14 09:07:01.454 | INFO     | dify_rag_evaluator:run_evaluation:256 - 开始执行RAGAS评估,检索策略:hybrid_search_reranking...
+2025-08-14 09:07:33.832 | INFO     | dify_rag_evaluator:run_evaluation:262 - 检索策略:hybrid_search_reranking评估完成
+2025-08-14 09:07:33.921 | INFO     | base_rag_evalutor:save_results:82 - 评估结果已保存到 evaluation_results1.xlsx
+2025-08-14 12:41:09.949 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 12:41:11.734 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 12:41:11.734 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 12:41:11.734 | INFO     | __main__:run_evaluation:220 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 12:41:25.839 | INFO     | __main__:run_evaluation:228 - 加载了 1 条测试数据
+2025-08-14 12:41:29.483 | INFO     | __main__:run_evaluation:236 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 12:41:32.042 | ERROR    | __main__:main:264 - 评估过程中发生错误: LightRagEvaluator.create_evaluation_dataset() got an unexpected keyword argument 'rag_config'
+2025-08-14 12:42:36.560 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 12:42:38.312 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 12:42:38.319 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 12:42:38.319 | INFO     | __main__:run_evaluation:220 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 12:43:53.511 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 12:43:55.276 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 12:44:59.438 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 12:44:59.439 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 12:44:59.651 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 12:44:59.651 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 12:44:59.651 | INFO     | __main__:create_evaluation_dataset:53 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 12:44:59.655 | ERROR    | __main__:main:272 - 评估过程中发生错误: Object of type function is not JSON serializable
+2025-08-14 12:50:12.909 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 12:50:14.688 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 12:51:20.014 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 12:51:20.016 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 12:51:34.098 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 12:51:35.803 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 12:51:38.603 | INFO     | __main__:create_evaluation_dataset:53 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 12:53:16.270 | ERROR    | __main__:main:272 - 评估过程中发生错误: Object of type function is not JSON serializable
+2025-08-14 12:55:43.924 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 12:55:45.679 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 12:56:50.248 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 12:56:50.248 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 12:57:10.599 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 12:57:10.605 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 12:57:10.605 | INFO     | __main__:create_evaluation_dataset:53 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:00:25.253 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:00:27.043 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:01:34.246 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:01:34.246 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:01:39.011 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 13:01:39.019 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:01:39.019 | INFO     | __main__:create_evaluation_dataset:53 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:03:31.000 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:03:32.743 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:04:52.669 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:04:54.438 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:06:01.955 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:06:01.955 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:06:12.523 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 13:06:12.523 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:06:12.523 | INFO     | __main__:create_evaluation_dataset:53 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:06:57.604 | ERROR    | __main__:retrieve:198 - API请求失败: 401 Client Error: Unauthorized for url: http://10.10.0.22:9621/query | Status: 401 | Response: {"detail":"Invalid token"}
+2025-08-14 13:13:57.088 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:13:58.837 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:14:49.574 | ERROR    | __main__:main:277 - 评估过程中发生错误: Connection error.
+2025-08-14 13:20:12.546 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:20:14.367 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:21:22.404 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:21:22.406 | INFO     | __main__:run_evaluation:226 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:21:25.489 | INFO     | __main__:run_evaluation:234 - 加载了 1 条测试数据
+2025-08-14 13:21:25.495 | INFO     | __main__:run_evaluation:242 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:21:25.495 | INFO     | __main__:create_evaluation_dataset:53 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:21:52.851 | ERROR    | __main__:main:270 - 评估过程中发生错误: cannot access local variable 'headers' where it is not associated with a value
+2025-08-14 13:26:03.214 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:26:05.534 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:27:17.453 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:27:17.453 | INFO     | __main__:run_evaluation:229 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:27:24.922 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-14 13:27:24.932 | INFO     | __main__:run_evaluation:245 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:27:24.932 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:27:36.753 | ERROR    | __main__:retrieve:187 - 检索 light rag error: body.conversation_history.0: Input should be a valid dictionary
+body.history_turns: Input should be a valid integer
+body.ids.0: Input should be a valid string
+body.user_prompt: Input should be a valid string
+2025-08-14 13:27:36.753 | ERROR    | __main__:main:273 - 评估过程中发生错误: body.conversation_history.0: Input should be a valid dictionary
+body.history_turns: Input should be a valid integer
+body.ids.0: Input should be a valid string
+body.user_prompt: Input should be a valid string
+2025-08-14 13:37:55.828 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:37:57.657 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:39:30.366 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:39:30.366 | INFO     | __main__:run_evaluation:229 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:39:35.773 | INFO     | __main__:run_evaluation:237 - 加载了 1 条测试数据
+2025-08-14 13:39:35.780 | INFO     | __main__:run_evaluation:245 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:39:35.780 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:39:44.820 | ERROR    | __main__:retrieve:187 - 检索 light rag error: body.conversation_history.0: Input should be a valid dictionary
+body.history_turns: Input should be a valid integer
+body.ids.0: Input should be a valid string
+body.user_prompt: Input should be a valid string
+2025-08-14 13:39:44.822 | ERROR    | __main__:main:273 - 评估过程中发生错误: body.conversation_history.0: Input should be a valid dictionary
+body.history_turns: Input should be a valid integer
+body.ids.0: Input should be a valid string
+body.user_prompt: Input should be a valid string
+2025-08-14 13:43:17.516 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:43:19.345 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:44:37.570 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:44:37.570 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:44:40.080 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 13:44:40.084 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:44:40.084 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:47:08.689 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:47:10.518 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:48:03.925 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:48:05.754 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:49:28.797 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:49:28.798 | INFO     | __main__:run_evaluation:228 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:49:29.051 | INFO     | __main__:run_evaluation:236 - 加载了 1 条测试数据
+2025-08-14 13:49:29.052 | INFO     | __main__:run_evaluation:244 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:49:29.052 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:50:21.988 | ERROR    | __main__:retrieve:186 - 检索 light rag error: body.user_prompt: Input should be a valid string
+2025-08-14 13:50:21.989 | ERROR    | __main__:main:272 - 评估过程中发生错误: body.user_prompt: Input should be a valid string
+2025-08-14 13:53:25.681 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 13:53:27.496 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 13:54:52.213 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 13:54:52.213 | INFO     | __main__:run_evaluation:227 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 13:54:55.921 | INFO     | __main__:run_evaluation:235 - 加载了 1 条测试数据
+2025-08-14 13:54:55.926 | INFO     | __main__:run_evaluation:243 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 13:54:55.926 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 13:55:51.996 | ERROR    | __main__:retrieve_context:218 - retrieve_context JSON 解析错误: Expecting value: line 1 column 1 (char 0)
+2025-08-14 14:01:23.763 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 14:01:26.128 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 14:02:50.220 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 14:02:50.220 | INFO     | __main__:run_evaluation:225 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 14:02:54.383 | INFO     | __main__:run_evaluation:233 - 加载了 1 条测试数据
+2025-08-14 14:02:54.389 | INFO     | __main__:run_evaluation:241 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 14:02:54.389 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 14:05:40.289 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 14:05:42.127 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 14:07:06.610 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 14:07:06.610 | INFO     | __main__:run_evaluation:225 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 14:13:00.007 | INFO     | __main__:run_evaluation:233 - 加载了 1 条测试数据
+2025-08-14 14:13:00.007 | INFO     | __main__:run_evaluation:241 - 开始创建RAGAS数据集,检索策略:mix...
+2025-08-14 14:13:00.007 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 14:14:28.921 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 14:14:30.744 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 14:15:54.748 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 14:15:54.748 | INFO     | __main__:run_evaluation:225 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 14:15:59.682 | INFO     | __main__:run_evaluation:233 - 加载了 1 条测试数据
+2025-08-14 14:15:59.692 | INFO     | __main__:run_evaluation:241 - 开始创建RAGAS数据集,检索策略:hybrid...
+2025-08-14 14:15:59.692 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 14:33:00.402 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 14:33:02.288 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 14:34:29.621 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 14:34:29.621 | INFO     | __main__:run_evaluation:226 - 开始评估lightrag 知识图谱检索和生成的质量...
+2025-08-14 14:34:35.661 | INFO     | __main__:run_evaluation:234 - 加载了 1 条测试数据
+2025-08-14 14:34:35.663 | INFO     | __main__:run_evaluation:242 - 开始创建RAGAS数据集,检索策略:hybrid...
+2025-08-14 14:34:35.664 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 14:35:59.120 | INFO     | __main__:create_evaluation_dataset:69 - RAG系统生成的答案: 根据《住宅项目规范》中的规定，住宅建筑设置电梯的要求如下：
+
+### 电梯设置标准
+1. **最低要求**  
+   当住宅建筑满足以下任一条件时，每个住宅单元需至少设置1台电梯：  
+   - 最高入户层为**四层及四层以上**；  
+   - 最高入户层楼面距室外设计地面高度**超过9米**。
+
+2. **更高要求**  
+   当住宅建筑满足以下任一条件时，每个住宅单元需至少设置2台电梯： ...
+2025-08-14 14:35:59.120 | INFO     | __main__:run_evaluation:248 - 开始执行RAGAS评估,检索策略:hybrid...
+2025-08-14 14:37:13.740 | INFO     | __main__:run_evaluation:254 - 检索策略:hybrid评估完成
+2025-08-14 14:37:13.743 | INFO     | __main__:run_evaluation:242 - 开始创建RAGAS数据集,检索策略:global...
+2025-08-14 14:37:13.743 | INFO     | __main__:create_evaluation_dataset:54 - 处理QA对 1/1: 住宅多少层需要设置电梯？
+2025-08-14 14:38:34.541 | INFO     | __main__:create_evaluation_dataset:69 - RAG系统生成的答案: ### 住宅电梯设置要求
+
+根据《住宅项目规范》中的相关规定，住宅建筑电梯的设置需满足以下要求：
+
+1. **四层及以上住宅**  
+   - **最低要求**：当住宅建筑最高入户层为**四层及四层以上**，或最高入户层楼面距室外设计地面高度**超过9米**时，每个住宅单元应至少设置**1台电梯**。
+   - **尺寸要求**：至少有1台电梯需满足轿厢门净宽**不小于0.90米**，或采用宽轿厢...
+2025-08-14 14:38:34.541 | INFO     | __main__:run_evaluation:248 - 开始执行RAGAS评估,检索策略:global...
+2025-08-14 14:40:14.896 | INFO     | __main__:run_evaluation:254 - 检索策略:global评估完成
+2025-08-14 14:40:14.979 | INFO     | base_rag_evalutor:save_results:82 - 评估结果已保存到 evaluation_results2.xlsx
+2025-08-14 14:41:11.859 | INFO     | llm_evaluator:get_evaluator_llm:13 - 使用LLM进行评估: deepseek-chat
+2025-08-14 14:41:12.954 | INFO     | base_rag_evalutor:initialize_evaluator:22 - 正在修改评估prompt适配中文...
+2025-08-14 14:42:37.040 | INFO     | base_rag_evalutor:initialize_evaluator:27 - 评估prompt语言已适配为中文
+2025-08-14 14:42:37.040 | INFO     | dify_rag_evaluator:run_evaluation:225 - 开始评估Dify知识库检索和RAG生成的质量...
+2025-08-14 14:42:37.152 | INFO     | dify_rag_evaluator:run_evaluation:232 - 加载了 1 条测试数据
+2025-08-14 14:42:37.628 | INFO     | dify_rag_evaluator:run_evaluation:246 - 开始创建RAGAS数据集,检索策略:semantic_search1...
+2025-08-14 14:42:37.628 | INFO     | dify_rag_evaluator:create_evaluation_dataset:169 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-14 14:42:37.628 | INFO     | dify_rag_evaluator:retrieve:118 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-14 14:42:37.630 | INFO     | dify_rag_evaluator:retrieve:119 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: semantic_search, 启用重排序: False
+2025-08-14 14:42:37.630 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-14 14:42:37.630 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-14 14:42:39.318 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 检索到 3 个上下文片段
+2025-08-14 14:42:46.567 | INFO     | dify_rag_evaluator:create_evaluation_dataset:185 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 98μg/kg；
+102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-14 14:42:46.567 | INFO     | dify_rag_evaluator:run_evaluation:252 - 开始执行RAGAS评估,检索策略:semantic_search1...
+2025-08-14 14:43:29.972 | INFO     | dify_rag_evaluator:run_evaluation:258 - 检索策略:semantic_search1评估完成
+2025-08-14 14:43:29.972 | INFO     | dify_rag_evaluator:run_evaluation:246 - 开始创建RAGAS数据集,检索策略:hybrid_search_weight...
+2025-08-14 14:43:29.973 | INFO     | dify_rag_evaluator:create_evaluation_dataset:169 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-14 14:43:29.973 | INFO     | dify_rag_evaluator:retrieve:118 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-14 14:43:29.973 | INFO     | dify_rag_evaluator:retrieve:119 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-14 14:43:29.973 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-14 14:43:29.973 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-14 14:43:29.973 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: False
+2025-08-14 14:43:29.973 | INFO     | dify_rag_evaluator:retrieve:129 - 混合检索 - 权重设置: {'keyword_setting': {'keyword_weight': 0.1}, 'vector_setting': {'embedding_model_name': 'bge-m3', 'embedding_provider_name': 'langgenius/xinference/xinference', 'vector_weight': 0.9}, 'weight_type': 'customized'}
+2025-08-14 14:43:30.990 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 检索到 3 个上下文片段
+2025-08-14 14:43:37.455 | INFO     | dify_rag_evaluator:create_evaluation_dataset:185 - RAG系统生成的答案: 98.5μg/kg 保留至整数位，即 99μg/kg；102μg/kg 保留三位有效数字，即 102μg/kg。...
+2025-08-14 14:43:37.455 | INFO     | dify_rag_evaluator:run_evaluation:252 - 开始执行RAGAS评估,检索策略:hybrid_search_weight...
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:run_evaluation:258 - 检索策略:hybrid_search_weight评估完成
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:run_evaluation:246 - 开始创建RAGAS数据集,检索策略:hybrid_search_reranking...
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:create_evaluation_dataset:169 - 处理QA对 1/1: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:retrieve:118 - 开始检索知识库: 4c6c9113-c053-4929-b252-482e634f1ec0
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:retrieve:119 - 检索参数 - 查询问题: 某实验室测定某目标物含量为 98.5μg/kg，另一目标物为 102μg/kg，根据 HJ605 要求，两者应分别保留几位数字？, 搜索方法: hybrid_search, 启用重排序: True
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:retrieve:122 - 检索配置 rerank model : bge-reranker-v2-m3
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:retrieve:123 - 检索配置 - top_k: 3
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:retrieve:124 - 检索配置 - 分数阈值启用: True
+2025-08-14 14:44:17.740 | INFO     | dify_rag_evaluator:retrieve:126 - 检索配置 - 分数阈值: 0.5
+2025-08-14 14:44:18.669 | INFO     | dify_rag_evaluator:create_evaluation_dataset:173 - 检索到 1 个上下文片段
+2025-08-14 14:44:24.387 | INFO     | dify_rag_evaluator:create_evaluation_dataset:185 - RAG系统生成的答案: 98.5μg/kg 保留至整数位（即 99μg/kg），102μg/kg 保留三位有效数字（即 102μg/kg）。...
+2025-08-14 14:44:24.387 | INFO     | dify_rag_evaluator:run_evaluation:252 - 开始执行RAGAS评估,检索策略:hybrid_search_reranking...
+2025-08-14 14:45:03.122 | INFO     | dify_rag_evaluator:run_evaluation:258 - 检索策略:hybrid_search_reranking评估完成
+2025-08-14 14:45:03.172 | INFO     | base_rag_evalutor:save_results:82 - 评估结果已保存到 evaluation_results1.xlsx
